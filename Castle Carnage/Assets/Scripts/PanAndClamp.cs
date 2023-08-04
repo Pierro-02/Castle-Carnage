@@ -31,9 +31,9 @@ public class PanAndClamp : MonoBehaviour {
 
             // Boundries
             transform.position = new Vector3(
-                Mathf.Clamp(thisX, initialPos.x - 20f, initialPos.x + 20f),
-                Mathf.Clamp(thisY, initialPos.y - 5f, initialPos.y + 5f),
-                Mathf.Clamp(thisZ, initialPos.z - 20f, initialPos.z + 20f));
+                Mathf.Clamp(thisX, initialPos.x - 1f, initialPos.x + 1f),
+                Mathf.Clamp(thisY, initialPos.y - 2f, initialPos.y + 2f),
+                Mathf.Clamp(thisZ, initialPos.z - 1f, initialPos.z + 1f));
         }
     }
 

@@ -74,7 +74,7 @@ public class CubePlacer : MonoBehaviour {
 
         if (Physics.Raycast(ray, out hitInfo)) {
             int hitLayer = hitInfo.collider.gameObject.layer;
-            if (hitLayer != 9) {
+            if (hitLayer == 6) {
                 Destroy(hitInfo.collider.gameObject);
             }
         }
