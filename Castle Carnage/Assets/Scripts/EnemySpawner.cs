@@ -85,9 +85,8 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     public void StartGame() {
-        if (!readyToCountdown) {
-            readyToCountdown = true;
-        }
+        Debug.Log("Testing");
+        readyToCountdown = true;
     }
 }
 
