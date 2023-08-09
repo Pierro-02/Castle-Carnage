@@ -10,16 +10,16 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - Walkable
   - Ignore
   - Non Removable
   - Ground
-  - 
-  - 
-  - 
+  - Tower
+  - Towerless Platform
+  - Platform with Tower
   - 
   - 
   - 

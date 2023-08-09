@@ -24,14 +24,14 @@ public class EnemySpawner : MonoBehaviour {
 
         enemiesToSpawn = new int[waves.Length];
 
-        Debug.Log("Number of Waves: " + waves.Length);
+        //Debug.Log("Number of Waves: " + waves.Length);
 
         for (int i = 0; i < waves.Length; i++) {
             waves[i].enemiesLeft = waves[i].enemies.Length;
 
             enemiesToSpawn[i] = waves[i].enemies.Length;
 
-            Debug.Log(enemiesToSpawn[i]);
+            //Debug.Log(enemiesToSpawn[i]);
         }
 
         
@@ -57,16 +57,16 @@ public class EnemySpawner : MonoBehaviour {
             readyToCountdown = false;
 
             countdown = waves[currentWaveIndex].timeToNextWave;
-
             StartCoroutine(SpawnWave());
         }
     }
 
     private IEnumerator SpawnWave() {
-        Debug.Log(currentWaveIndex);
+        //Debug.Log(currentWaveIndex);
         if (currentWaveIndex < waves.Length) {
-            for (int i = 0; i < enemiesToSpawn[currentWaveIndex]; i++) {
-                Debug.Log("i: " + i);
+            int lenght = enemiesToSpawn[currentWaveIndex];
+            for (int i = 0; i < lenght; i++) {
+                //Debug.Log("i: " + i);
                 Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
 
                 enemy.transform.SetParent(spawnPoint.transform);
@@ -85,7 +85,7 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     public void StartGame() {
-        Debug.Log("Testing");
+        //Debug.Log("Testing");
         readyToCountdown = true;
     }
 }
