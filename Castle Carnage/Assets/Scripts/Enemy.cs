@@ -17,13 +17,15 @@ public class Enemy : MonoBehaviour {
     [SerializeField] private int damage;
     [SerializeField] private Image healthBar;
 
+    private Animator animator;
     private EnemySpawner spawner;
     private bool isAttacking;
     private GameObject troopInRange;
     private int health;
 
-
     private void Start () {
+        animator = GetComponentInChildren<Animator>();
+
         health = maxHealth;
 
         spawner = GetComponentInParent<EnemySpawner>();
@@ -63,7 +65,6 @@ public class Enemy : MonoBehaviour {
     }
 
     public void TakeDamage(int damage) {
-        Debug.Log("Damage Recieved: " + damage);
         health -= damage;
 
         UpdateHealth(health, maxHealth);
@@ -79,6 +80,7 @@ public class Enemy : MonoBehaviour {
     public void InRange(GameObject troop) {
         isAttacking = true;
         troopInRange = troop;
+        animator.SetBool("IsAttacking", true);
 
         agent.SetDestination(troop.transform.position);
         StartCoroutine(Attacking(troopInRange));
@@ -89,6 +91,7 @@ public class Enemy : MonoBehaviour {
     }
 
     private void Resume() {
+        animator.SetBool("IsAttacking", false);
         isAttacking = false;
         Move();
         agent.isStopped = false;

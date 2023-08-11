@@ -8,7 +8,6 @@ using UnityEngine.AI;
 public class Troop : MonoBehaviour {
 
     [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private GameObject target;
     [SerializeField] private int health;
     [SerializeField] private int damage;
     [SerializeField] private float attackRate;
@@ -16,12 +15,13 @@ public class Troop : MonoBehaviour {
     private Transform targetLocation;
     private bool attacking;
     private List<GameObject> enemies;
-    
+    private Transform target;
+
     public bool inRange;
 
     // Start is called before the first frame update
     void Start() {
-        targetLocation = target.transform;
+        targetLocation = transform;
         attacking = false;
         inRange = false;
         enemies = new List<GameObject>();
@@ -29,14 +29,13 @@ public class Troop : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        agent.SetDestination(targetLocation.position);
-        if (inRange) {
-            Debug.Log("InRange");
-
-            agent.isStopped = true;
-            EnemyDetected();
+        if (!IsKilled()) {
+            agent.SetDestination(targetLocation.position);
+            if (inRange) {
+                agent.isStopped = true;
+                EnemyDetected();
+            }
         }
-
     }
 
     private void OnTriggerStay(Collider obj) {
@@ -59,8 +58,6 @@ public class Troop : MonoBehaviour {
             Enemy enemy = enemies[i].GetComponent<Enemy>();
 
             attacking = true;
-
-            Debug.Log("Enemy Entered");
 
             enemy.InRange(this.gameObject);
             StartCoroutine(Attack(enemies[i].gameObject));
@@ -91,7 +88,7 @@ public class Troop : MonoBehaviour {
         if (!IsKilled()) {
             agent.isStopped = false;
         }
-        targetLocation = target.transform;
+        targetLocation = target;
         attacking = false;
         inRange = false;
     }
@@ -102,5 +99,14 @@ public class Troop : MonoBehaviour {
 
     public void TakeDamage(int damage) {
         health -= damage;
+    }
+
+    public void SetDestination(Transform des) {
+        target = des;
+        targetLocation = des;
+    }
+
+    public NavMeshAgent GetAgent() {
+        return agent;
     }
 }

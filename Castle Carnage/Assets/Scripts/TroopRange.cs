@@ -12,7 +12,6 @@ public class TroopRange : MonoBehaviour {
 
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "Enemy") {
-            Debug.Log("Enemy In Range");
             troop.inRange = true;
         }
     }

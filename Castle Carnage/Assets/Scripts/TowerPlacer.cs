@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class TowerPlacer : MonoBehaviour {
     Vector3 movePoint;
     [SerializeField] private GameObject prefab;
     [SerializeField] private GameObject economyManager;
+    [SerializeField] private TMP_Text priceText;
     [SerializeField] private int prefabPrice;
 
     private bool canPlace;
@@ -18,6 +20,7 @@ public class TowerPlacer : MonoBehaviour {
     void Start() {
         canPlace = false;
         eco = economyManager.GetComponent<Economy>();
+        UpdatePrice(prefabPrice);
     }
 
     // Update is called once per frame
@@ -35,6 +38,9 @@ public class TowerPlacer : MonoBehaviour {
 
                     hit.collider.gameObject.layer = 12;
 
+                    prefabPrice += (int)((float)prefabPrice / 2f);
+                    UpdatePrice(prefabPrice);
+
                     GameObject tower = Instantiate(prefab);
 
                     tower.transform.SetParent(hit.collider.gameObject.transform);
@@ -44,9 +50,11 @@ public class TowerPlacer : MonoBehaviour {
                     tower.transform.localPosition = new Vector3(0, 1, 0);
                 }
             }
-
-            
         }
+    }
+
+    private void UpdatePrice(int price) {
+        priceText.text = price.ToString();
     }
 
     public void CanPlace() {
