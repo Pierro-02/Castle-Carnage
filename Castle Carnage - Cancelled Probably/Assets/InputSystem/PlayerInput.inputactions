@@ -1,0 +1,34 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "Player Build",
+            "id": "eb9ab7ef-6587-4d66-8ae0-2975e5f38005",
+            "actions": [
+                {
+                    "name": "Place",
+                    "type": "Button",
+                    "id": "ec884f20-52f5-45ca-b478-b41d708c2af5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "077b2ee9-8481-457c-a31e-905035396dba",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Place",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
