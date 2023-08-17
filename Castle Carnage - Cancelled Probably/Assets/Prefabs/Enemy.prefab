@@ -155,6 +155,7 @@ MonoBehaviour:
   attackRate: 2
   damage: 3
   healthBar: {fileID: 3599184760796186705}
+  coinsOnDeath: 10
 --- !u!136 &9078316730017911016
 CapsuleCollider:
   m_ObjectHideFlags: 0

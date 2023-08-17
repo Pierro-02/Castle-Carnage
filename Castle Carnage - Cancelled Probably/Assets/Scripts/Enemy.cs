@@ -1,12 +1,5 @@
-using System.Collections;
-using System.ComponentModel;
-using Unity.Collections;
-using Unity.Collections.LowLevel.Unsafe;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.InputSystem.Utilities;
-using UnityEngine.Rendering.HighDefinition;
 using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
@@ -16,6 +9,7 @@ public class Enemy : MonoBehaviour {
     [SerializeField] private float attackRate;
     [SerializeField] private int damage;
     [SerializeField] private Image healthBar;
+    [SerializeField] private int coinsOnDeath;
 
     private Animator animator;
     private EnemySpawner spawner;
@@ -37,6 +31,7 @@ public class Enemy : MonoBehaviour {
         Move();
 
         if (IsKilled()) {
+            Economy.AddCoins(coinsOnDeath);
             Destroy(this.gameObject);
         }
     }

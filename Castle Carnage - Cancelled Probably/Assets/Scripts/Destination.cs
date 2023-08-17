@@ -7,6 +7,7 @@ public class Destination : MonoBehaviour {
     private const string OBJECT_LAYER = "Enemy";
 
     private void OnTriggerEnter(Collider collider) {
+        HealthManager.LifeLost();
         Debug.Log(collider.name + " should be deleted");
     }
 

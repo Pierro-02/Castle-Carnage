@@ -1,34 +1,32 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Economy : MonoBehaviour {
 
-    [SerializeField] private TMP_Text text;
     [SerializeField] private int initialAmount;
+    [SerializeField] private TMP_Text text;
 
-    private int amount;
-    //public bool add;
+    private static int amount;
 
     private void Start() {
         amount = 0;
         AddCoins(initialAmount);
     }
 
-    public void AddCoins(int val) {
+    private void FixedUpdate() {
+        text.text = amount.ToString();
+    }
+
+    public static void AddCoins(int val) {
         amount += val;
-        text.text = amount.ToString();
+        
     }
 
-    public void SubtractCoins(int val) {
+    public static void SubtractCoins(int val) {
         amount -= val;
-        text.text = amount.ToString();
     }
 
-    public int GetCurrentCoins() {
+    public static int GetCurrentCoins() {
         return amount;
     }
 }

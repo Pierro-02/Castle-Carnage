@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowSpeed: 10
   maxLifetime: 5
-  projectileDamage: 3
+  projectileDamage: 5
 --- !u!54 &-5094749872672733824
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ public class CubePlacer : MonoBehaviour {
     [SerializeField] private GameObject objectToCreate;
     [SerializeField] private GameObject parentGrid;
     [SerializeField] private NavmeshBaker meshBaker;
-    [SerializeField] private GameObject economyManager;
     [SerializeField] private int pathPrice;
     [SerializeField] private TMP_Text priceText;
     [SerializeField] private int pathCounter;
@@ -28,8 +27,6 @@ public class CubePlacer : MonoBehaviour {
     private void Awake() {
         placing = false;
         touching = false;
-
-        eco = economyManager.GetComponent<Economy>();
 
         grid = FindObjectOfType<Grid>();
         UpdatePrice(pathPrice);
@@ -74,11 +71,11 @@ public class CubePlacer : MonoBehaviour {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, layersToInclude)) {
-            if (hitInfo.collider.gameObject.layer == 9 && eco.GetCurrentCoins() >= pathPrice && pathCounter > 0) {
+            if (hitInfo.collider.gameObject.layer == 9 && Economy.GetCurrentCoins() >= pathPrice && pathCounter > 0) {
 
                 pathCounter--;
                 UpdatePathCounter(pathCounter);
-                eco.SubtractCoins(pathPrice);
+                Economy.SubtractCoins(pathPrice);
                 PlaceCubeNear(hitInfo.point);
 
             }
@@ -94,7 +91,7 @@ public class CubePlacer : MonoBehaviour {
             int hitLayer = hitInfo.collider.gameObject.layer;
             if (hitLayer == 6) {
 
-                eco.AddCoins(pathPrice);
+                Economy.AddCoins(pathPrice);
                 Destroy(hitInfo.collider.gameObject);
                 pathCounter++;
                 UpdatePathCounter(pathCounter);

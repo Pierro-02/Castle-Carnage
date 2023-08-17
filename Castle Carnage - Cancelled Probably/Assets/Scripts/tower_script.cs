@@ -19,7 +19,6 @@ public class ArcherTower : MonoBehaviour {
 
             // If there's a target within range, shoot an arrow
             if (target != null && Vector3.Distance(transform.position, target.transform.position) <= attackRange) {
-                transform.LookAt(target.transform);
                 ShootArrow();
             }
         }
