@@ -12,7 +12,7 @@ public class TroopRange : MonoBehaviour {
 
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "Enemy") {
-            troop.inRange = true;
+            //troop.inRange = true;
         }
     }
 }

@@ -45,56 +45,13 @@ public class Enemy : MonoBehaviour {
         agent.SetDestination(spawner.GetDestination().position);
     }
 
-    private IEnumerator Attacking(GameObject obj) {
-        Troop troop = obj.gameObject.GetComponent<Troop>();
-
-        while (isAttacking) {
-            troop.TakeDamage(damage);
-
-            if (troop.IsKilled()) {
-                Destroy(obj.gameObject);
-                Resume();
-            } 
-            if (IsKilled()) {
-                isAttacking = false;
-                Destroy(this.gameObject);
-            }
-
-            yield return new WaitForSeconds(attackRate);
-        }
-    }
-
     public void TakeDamage(int damage) {
         health -= damage;
-
         UpdateHealth(health, maxHealth);
     }
 
     public bool IsKilled() {
-        if (health <= 0) {
-            return true;
-        }
-        return false;
-    }
-
-    public void InRange(GameObject troop) {
-        isAttacking = true;
-        troopInRange = troop;
-        animator.SetBool("IsAttacking", true);
-
-        agent.SetDestination(troop.transform.position);
-        StartCoroutine(Attacking(troopInRange));
-    }
-
-    public void TroopDetected() {
-        agent.isStopped = true;
-    }
-
-    private void Resume() {
-        animator.SetBool("IsAttacking", false);
-        isAttacking = false;
-        Move();
-        agent.isStopped = false;
+        return (health <= 0);
     }
 
     private void UpdateHealth(float currentHealth, float maxHealth) {

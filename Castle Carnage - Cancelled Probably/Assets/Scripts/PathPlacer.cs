@@ -15,6 +15,9 @@ public class CubePlacer : MonoBehaviour {
     [SerializeField] private GameObject economyManager;
     [SerializeField] private int pathPrice;
     [SerializeField] private TMP_Text priceText;
+    [SerializeField] private int pathCounter;
+    [SerializeField] private TMP_Text counterText;
+    [SerializeField] private LayerMask layersToInclude;
 
     private Grid grid;
     private Economy eco;
@@ -30,10 +33,13 @@ public class CubePlacer : MonoBehaviour {
 
         grid = FindObjectOfType<Grid>();
         UpdatePrice(pathPrice);
+        UpdatePathCounter(pathCounter);
     }
 
-    private void Update() {
-        if (touching == true || Input.GetMouseButton(0)) {
+    private void FixedUpdate() {
+        bool temp = true;
+        if (touching == true || Input.GetMouseButton(0) && temp) {
+            temp = false;
             if (placing == true) {
                 Place();
             }
@@ -67,9 +73,11 @@ public class CubePlacer : MonoBehaviour {
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hitInfo)) {
-            if (hitInfo.collider.gameObject.layer == 9 && eco.GetCurrentCoins() >= pathPrice) {
+        if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, layersToInclude)) {
+            if (hitInfo.collider.gameObject.layer == 9 && eco.GetCurrentCoins() >= pathPrice && pathCounter > 0) {
 
+                pathCounter--;
+                UpdatePathCounter(pathCounter);
                 eco.SubtractCoins(pathPrice);
                 PlaceCubeNear(hitInfo.point);
 
@@ -82,13 +90,15 @@ public class CubePlacer : MonoBehaviour {
 
         RaycastHit hitInfo;
 
-        if (Physics.Raycast(ray, out hitInfo)) {
+        if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, layersToInclude)) {
             int hitLayer = hitInfo.collider.gameObject.layer;
             if (hitLayer == 6) {
 
                 eco.AddCoins(pathPrice);
                 Destroy(hitInfo.collider.gameObject);
-            
+                pathCounter++;
+                UpdatePathCounter(pathCounter);
+
             }
         }
     }
@@ -108,5 +118,9 @@ public class CubePlacer : MonoBehaviour {
 
     private void UpdatePrice(int price) {
         priceText.text = price.ToString();
+    }
+
+    private void UpdatePathCounter(int counter) {
+        counterText.text = counter.ToString();
     }
 }

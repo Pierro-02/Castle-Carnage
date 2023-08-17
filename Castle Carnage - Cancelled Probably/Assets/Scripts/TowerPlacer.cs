@@ -12,6 +12,7 @@ public class TowerPlacer : MonoBehaviour {
     [SerializeField] private GameObject economyManager;
     [SerializeField] private TMP_Text priceText;
     [SerializeField] private int prefabPrice;
+    [SerializeField] private LayerMask layersToInclude;
 
     private bool canPlace;
     private Economy eco;
@@ -30,7 +31,7 @@ public class TowerPlacer : MonoBehaviour {
 
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
-            if (Physics.Raycast(ray, out hit)) {
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, layersToInclude)) {
                 if (hit.collider.gameObject.layer == 11 && eco.GetCurrentCoins() >= prefabPrice) {
                     canPlace = false;
 
@@ -45,9 +46,9 @@ public class TowerPlacer : MonoBehaviour {
 
                     tower.transform.SetParent(hit.collider.gameObject.transform);
 
-                    tower.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                    tower.transform.localScale = new Vector3(0.45f, 0.3f, 0.45f);
 
-                    tower.transform.localPosition = new Vector3(0, 1, 0);
+                    tower.transform.localPosition = new Vector3(0, 0.55f, 0);
                 }
             }
         }
