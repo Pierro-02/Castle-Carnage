@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 33ac5b484806f7346ba3909befeb0e87
+guid: e262d4209498be34990a37400d448fea
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: gold
-    second: {fileID: 2100000, guid: 0179778e168eab44c9fea914d1669648, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: greyblocks
-    second: {fileID: 2100000, guid: 0179778e168eab44c9fea914d1669648, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -42,7 +32,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1

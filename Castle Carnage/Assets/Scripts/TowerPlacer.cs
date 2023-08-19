@@ -8,17 +8,23 @@ public class TowerPlacer : MonoBehaviour {
     
     RaycastHit hit;
     Vector3 movePoint;
-    [SerializeField] private GameObject prefab;
-    [SerializeField] private TMP_Text priceText;
-    [SerializeField] private int prefabPrice;
+    [SerializeField] private GameObject archerTower, crystalTower;
+    [SerializeField] private TMP_Text archerPriceText, crystalPriceText;
+    [SerializeField] private int archerPrice, crystalPrice;
     [SerializeField] private LayerMask layersToInclude;
 
     private bool canPlace;
+    private bool isArcherSelected;
+    private bool isCrystalSelected;
 
     // Start is called before the first frame update
     void Start() {
+        isArcherSelected = false;
+        isCrystalSelected = false;
+
         canPlace = false;
-        UpdatePrice(prefabPrice);
+        UpdatePrice(archerPrice, archerPriceText);
+        UpdatePrice(crystalPrice, crystalPriceText);
     }
 
     // Update is called once per frame
@@ -29,17 +35,24 @@ public class TowerPlacer : MonoBehaviour {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layersToInclude)) {
-                if (hit.collider.gameObject.layer == 11 && Economy.GetCurrentCoins() >= prefabPrice) {
+                if (hit.collider.gameObject.layer == 11 && CheckPrice()) {
                     canPlace = false;
+                    GameObject tower;
 
-                    Economy.SubtractCoins(prefabPrice);
+                    if (isArcherSelected) {
+                        tower = Instantiate(archerTower);
+                        Economy.SubtractCoins(archerPrice);
+                        archerPrice += (int)((float)archerPrice / 2f);
+                        UpdatePrice(archerPrice, archerPriceText);
+                    } else {
+                        tower = Instantiate(crystalTower);
+                        Economy.SubtractCoins(crystalPrice);
+                        crystalPrice += (int)((float)crystalPrice / 2f);
+                        UpdatePrice(crystalPrice, crystalPriceText);
+                    }
+
 
                     hit.collider.gameObject.layer = 12;
-
-                    prefabPrice += (int)((float)prefabPrice / 2f);
-                    UpdatePrice(prefabPrice);
-
-                    GameObject tower = Instantiate(prefab);
 
                     tower.transform.SetParent(hit.collider.gameObject.transform);
 
@@ -51,11 +64,27 @@ public class TowerPlacer : MonoBehaviour {
         }
     }
 
-    private void UpdatePrice(int price) {
+    private void UpdatePrice(int price, TMP_Text priceText) {
         priceText.text = price.ToString();
     }
 
-    public void CanPlace() {
+    public void ArcherSelected() {
+        isArcherSelected = true;
+        isCrystalSelected = false;
         canPlace = true;
+    }
+
+    public void CrystalSelected() {
+        isCrystalSelected = true;
+        isArcherSelected = false;
+        canPlace = true;
+    }
+
+    private bool CheckPrice() {
+        if (isArcherSelected) {
+            return (Economy.GetCurrentCoins() >= archerPrice);
+        } else {
+            return (Economy.GetCurrentCoins() >= crystalPrice);
+        }
     }
 }

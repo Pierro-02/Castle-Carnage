@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
@@ -17,7 +18,14 @@ public class Enemy : MonoBehaviour {
     private GameObject troopInRange;
     private int health;
 
+    private Camera _cam;
+    private Canvas canvas;
+
     private void Start () {
+        _cam = Camera.main;
+
+        canvas = healthBar.GetComponentInParent<Canvas>();
+
         animator = GetComponentInChildren<Animator>();
 
         health = maxHealth;
@@ -34,6 +42,8 @@ public class Enemy : MonoBehaviour {
             Economy.AddCoins(coinsOnDeath);
             Destroy(this.gameObject);
         }
+
+        canvas.transform.rotation = Quaternion.LookRotation(canvas.transform.position - _cam.transform.position);
     }
 
     private void Move() {

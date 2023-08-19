@@ -10,6 +10,11 @@ public class ArcherTower : MonoBehaviour {
 
     private float timeSinceLastShot = 0f;
     private GameObject target;
+    private Animator anim;
+
+    private void Start() {
+        anim = GetComponentInChildren<Animator>();
+    }
 
     private void Update() {
         // Check if cooldown has passed and reset the timeSinceLastShot
@@ -18,7 +23,10 @@ public class ArcherTower : MonoBehaviour {
 
             // If there's a target within range, shoot an arrow
             if (target != null && Vector3.Distance(transform.position, target.transform.position) <= attackRange) {
+                anim.SetBool("IsAttacking", true);
                 ShootArrow();
+            } else {
+                anim.SetBool("IsAttacking", false);
             }
         }
     }
