@@ -21,6 +21,8 @@ public class EnemySpawner : MonoBehaviour {
     private int[] enemiesToSpawn;
 
     private void Start () {
+        gameReady = false;
+
         readyToCountdown = true;
 
         enemiesToSpawn = new int[waves.Length];

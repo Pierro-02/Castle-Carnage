@@ -27,4 +27,10 @@ public class HealthManager : MonoBehaviour {
     public static void LifeLost(int amount = 1) {
         updateLives -= amount;
     }
+
+    public static bool IsGameOver() {
+        if (updateLives <= 0)
+            return true;
+        return false;
+    }
 }

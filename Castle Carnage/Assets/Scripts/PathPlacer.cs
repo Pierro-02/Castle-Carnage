@@ -24,6 +24,8 @@ public class CubePlacer : MonoBehaviour {
     private static bool isPathComplete = false;
 
     private void Awake() {
+        isPathComplete = false;
+
         directions = new Vector3[4];
 
         directions[0] = Vector3.forward;
