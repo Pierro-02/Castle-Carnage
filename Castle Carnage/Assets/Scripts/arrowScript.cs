@@ -23,10 +23,8 @@ public class ArrowScript : MonoBehaviour
             transform.Translate(Vector3.forward * arrowSpeed * Time.deltaTime);
             currentLifetime += Time.deltaTime;
             arrow.velocity = arrow.transform.forward * arrowSpeed;
-
-            if (currentLifetime >= maxLifetime) {
-                Destroy(gameObject);
-            }
+        } else {
+            Destroy(gameObject);
         }
     }
 

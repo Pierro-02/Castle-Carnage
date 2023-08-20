@@ -12,6 +12,7 @@ public class CubePlacer : MonoBehaviour {
     [SerializeField] private int pathCounter;
     [SerializeField] private TMP_Text counterText;
     [SerializeField] private LayerMask layersToInclude, pathLayers, endLayer;
+    [SerializeField] private GameObject normalButton, activeButton;
 
     private Grid grid;
     private Economy eco;
@@ -24,6 +25,9 @@ public class CubePlacer : MonoBehaviour {
     private static bool isPathComplete = false;
 
     private void Awake() {
+        normalButton.SetActive(true);
+        activeButton.SetActive(false);
+
         isPathComplete = false;
 
         directions = new Vector3[4];
@@ -58,15 +62,18 @@ public class CubePlacer : MonoBehaviour {
     }
 
     public void PlaceSelected() {
+        activeButton.SetActive(true);
         placing = true;
         deleting = false;
     }
     public void DeleteSelected() {
+        activeButton.SetActive(true);
         placing = false;
         deleting = true;
     }
 
     public void OnDeselect() {
+        activeButton.SetActive(false);
         placing = false;
         deleting = false;
     }
@@ -134,24 +141,26 @@ public class CubePlacer : MonoBehaviour {
     }
 
     private bool Valid(Vector3 clickPoint) {
-        bool testing = false;
+        bool isValid = false;
         float dist = 0.27f;
 
         var point = grid.GetNearestPointOnGrid(clickPoint);
 
         foreach (Vector3 dir in directions) {
             if (Physics.Raycast(point, dir, dist, pathLayers)) {
-                testing = true;
+                isValid = true;
             }
         }
 
-        foreach (Vector3 dir in directions) {
-            if (Physics.Raycast(point, dir, dist, endLayer)) {
-                isPathComplete = true;
+        if (isValid) {
+            foreach (Vector3 dir in directions) {
+                if (Physics.Raycast(point, dir, dist, endLayer)) {
+                    isPathComplete = true;
+                }
             }
         }
 
-        return testing;
+        return isValid;
     }
 
     public static bool GetIsPathComplete() {

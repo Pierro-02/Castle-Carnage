@@ -6,10 +6,19 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     [SerializeField] GameObject pausePannel;
+    [SerializeField] GameObject gameOverPannel;
+
+    private bool isGameOver;
+
+    private void Start() {
+        isGameOver = false;
+    }
 
     private void FixedUpdate() {
-        if (HealthManager.IsGameOver()) {
+        if (HealthManager.IsGameOver() && !isGameOver) {
+            isGameOver = true;
             Time.timeScale = 0f;
+            gameOverPannel.SetActive(true);
         }
     }
 
