@@ -67,7 +67,7 @@ public class CubePlacer : MonoBehaviour {
         deleting = false;
     }
     public void DeleteSelected() {
-        activeButton.SetActive(true);
+        activeButton.SetActive(false);
         placing = false;
         deleting = true;
     }

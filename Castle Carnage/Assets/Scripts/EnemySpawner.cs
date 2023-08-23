@@ -1,9 +1,5 @@
-using Microsoft.Win32.SafeHandles;
 using System.Collections;
-using System.Collections.Generic;
-using System.Net.Http.Headers;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour {
 
@@ -21,8 +17,8 @@ public class EnemySpawner : MonoBehaviour {
     private static bool gameReady = false;
     private int[] enemiesToSpawn;
 
-    [SerializeField] private NavMeshAgent navMeshAgent;
-    private NavMeshPath navMeshPath = new NavMeshPath();
+    //[SerializeField] private NavMeshAgent navMeshAgent;
+    //private NavMeshPath navMeshPath = new NavMeshPath();
 
 
     private void Start () {
@@ -41,12 +37,10 @@ public class EnemySpawner : MonoBehaviour {
 
             //Debug.Log(enemiesToSpawn[i]);
         }
-
-        
     }
 
     private void Update() {
-        Debug.Log("Path Exists: " + PathChecker());
+        //Debug.Log("Path Exists: " + PathChecker());
 
         if (!gameReady) {
             return;
@@ -76,9 +70,9 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     private bool PathChecker() {
-        if (navMeshAgent.CalculatePath(destination.gameObject.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete) {
-            return true;
-        }
+        //if (navMeshAgent.CalculatePath(destination.gameObject.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete) {
+        //    return true;
+        //}
         return false;
     }
 

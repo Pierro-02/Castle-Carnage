@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Transactions;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 
 public class TowerPlacer : MonoBehaviour {
@@ -12,6 +10,7 @@ public class TowerPlacer : MonoBehaviour {
     [SerializeField] private TMP_Text archerPriceText, crystalPriceText;
     [SerializeField] private int archerPrice, crystalPrice;
     [SerializeField] private LayerMask layersToInclude;
+    [SerializeField] private NodeUI nodeUI;
 
     private bool canPlace;
     private bool isArcherSelected;
@@ -28,15 +27,14 @@ public class TowerPlacer : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    private void FixedUpdate() {
         //Debug.Log("Touch Count: " + Input.touchCount + " Can Place: " + canPlace);
-        if (canPlace && Input.touchCount > 0) {
+        if (Input.touchCount > 0) {
 
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layersToInclude)) {
-                if (hit.collider.gameObject.layer == 11 && CheckPrice()) {
-                    canPlace = false;
+                if (hit.collider.gameObject.layer == 11 && CheckPrice() && canPlace) {
                     GameObject tower;
 
                     if (isArcherSelected) {
@@ -59,8 +57,17 @@ public class TowerPlacer : MonoBehaviour {
                     tower.transform.localScale = new Vector3(0.45f, 0.3f, 0.45f);
 
                     tower.transform.localPosition = new Vector3(0, 0.55f, 0);
+                } else if (hit.collider.gameObject.layer == 12 && !canPlace) {
+                    Debug.Log("Tower Selected");
+                    nodeUI.Activate();
+                    nodeUI.SetPosition(hit.collider.gameObject.transform.position);
+
+                } else {
+                    Debug.Log(hit.collider.gameObject.layer);
+                    nodeUI.Deactivate();
                 }
             }
+            canPlace = false;
         }
     }
 

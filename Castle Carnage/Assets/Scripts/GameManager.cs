@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,10 +5,13 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] GameObject pausePannel;
     [SerializeField] GameObject gameOverPannel;
+    [SerializeField] LayerMask upgradableLayers;
 
     private bool isGameOver;
+    private static bool isGameStarted;
 
     private void Start() {
+        isGameStarted = false;
         isGameOver = false;
     }
 
@@ -19,6 +20,10 @@ public class GameManager : MonoBehaviour {
             isGameOver = true;
             Time.timeScale = 0f;
             gameOverPannel.SetActive(true);
+        }
+
+        if (isGameStarted) {
+
         }
     }
 
@@ -40,5 +45,19 @@ public class GameManager : MonoBehaviour {
     public void Restart() {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public static void GameStarted() {
+        isGameStarted = true;
+    }
+
+    private void TowerUpgrade() {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        RaycastHit hitPoint;
+
+        if (Physics.Raycast(ray, out hitPoint, Mathf.Infinity, upgradableLayers)) {
+            //Show Upgrade
+        }
     }
 }
