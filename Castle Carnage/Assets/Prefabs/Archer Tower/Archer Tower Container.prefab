@@ -83,7 +83,7 @@ MonoBehaviour:
   arrowPrefab: {fileID: 5521581993426265356, guid: 2f80bfd2e17ab9341b9dd3f55dc1bb3c,
     type: 3}
   shootingPoint: {fileID: 4633005048802724940}
-  attackCooldown: 1
+  attackCooldown: 0.7
   attackRange: 10
 --- !u!135 &7191141931731018736
 SphereCollider:
