@@ -15,6 +15,7 @@ public class EnemySpawner : MonoBehaviour {
     private bool readyToCountdown;
 
     private static bool gameReady = false;
+    private bool wavesFinished;
     private int[] enemiesToSpawn;
 
     //[SerializeField] private NavMeshAgent navMeshAgent;
@@ -22,6 +23,8 @@ public class EnemySpawner : MonoBehaviour {
 
 
     private void Start () {
+        wavesFinished = false;
+
         gameReady = false;
 
         readyToCountdown = true;
@@ -79,8 +82,8 @@ public class EnemySpawner : MonoBehaviour {
     private IEnumerator SpawnWave() {
         //Debug.Log(currentWaveIndex);
         if (currentWaveIndex < waves.Length) {
-            int lenght = enemiesToSpawn[currentWaveIndex];
-            for (int i = 0; i < lenght; i++) {
+            int length = enemiesToSpawn[currentWaveIndex];
+            for (int i = 0; i < length; i++) {
                 //Debug.Log("i: " + i);
                 Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
 
@@ -103,6 +106,10 @@ public class EnemySpawner : MonoBehaviour {
         if (CubePlacer.GetIsPathComplete()) {
             gameReady = true;
         }
+    }
+
+    public bool WavesFinished() {
+        return wavesFinished;
     }
 }
 

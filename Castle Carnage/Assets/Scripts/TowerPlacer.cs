@@ -1,4 +1,3 @@
-using System.Transactions;
 using TMPro;
 using UnityEngine;
 
@@ -14,12 +13,12 @@ public class TowerPlacer : MonoBehaviour {
 
     private bool canPlace;
     private bool isArcherSelected;
-    private bool isCrystalSelected;
+    //private bool isCrystalSelected;
 
     // Start is called before the first frame update
     void Start() {
         isArcherSelected = false;
-        isCrystalSelected = false;
+        //isCrystalSelected = false;
 
         canPlace = false;
         UpdatePrice(archerPrice, archerPriceText);
@@ -77,12 +76,12 @@ public class TowerPlacer : MonoBehaviour {
 
     public void ArcherSelected() {
         isArcherSelected = true;
-        isCrystalSelected = false;
+        //isCrystalSelected = false;
         canPlace = true;
     }
 
     public void CrystalSelected() {
-        isCrystalSelected = true;
+        //isCrystalSelected = true;
         isArcherSelected = false;
         canPlace = true;
     }

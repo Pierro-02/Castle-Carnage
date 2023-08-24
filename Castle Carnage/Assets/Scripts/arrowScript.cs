@@ -1,16 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ArrowScript : MonoBehaviour
-{
+public class ArrowScript : MonoBehaviour {
     [SerializeField] private float arrowSpeed = 10f; // The speed of the arrow
-    [SerializeField] private float maxLifetime = 5f; // The maximum lifetime of the arrow (in seconds)
     [SerializeField] private int projectileDamage;
 
     private Rigidbody arrow;
     private float currentLifetime = 0f;
-    private bool enemyLocated;
     private GameObject enemy = null;
 
     private void Start() {
