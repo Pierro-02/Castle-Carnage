@@ -5,25 +5,38 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] GameObject pausePannel;
     [SerializeField] GameObject gameOverPannel;
+    [SerializeField] GameObject winPannel;
+    [SerializeField] EnemySpawner[] waveSpawner;
     [SerializeField] LayerMask upgradableLayers;
 
     private bool isGameOver;
+    private bool isGameWon;
     private static bool isGameStarted;
 
     private void Start() {
         isGameStarted = false;
         isGameOver = false;
+        isGameWon = false;
     }
 
     private void FixedUpdate() {
+        if (isGameWon) {
+            return;
+        }
+
         if (HealthManager.IsGameOver() && !isGameOver) {
             isGameOver = true;
             Time.timeScale = 0f;
             gameOverPannel.SetActive(true);
         }
 
-        if (isGameStarted) {
-
+        //if (isGameStarted) {
+        //}
+        if (!isGameWon) {
+            isGameWon = true;
+            foreach (var wave in waveSpawner) {
+                
+            }
         }
     }
 
@@ -47,6 +60,18 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void NextLevel() {
+        int currentLevel = LevelManager.GetCurrentLevelID();
+        currentLevel++;
+        LevelManager.SetCurrentLevel(currentLevel);
+        if (currentLevel == LevelManager.GetLastLevelID()) {
+            Debug.Log("No More Levels");
+        } else if (currentLevel < 10) {
+            string nextLevel = "Level 0" + currentLevel;
+            SceneManager.LoadScene(nextLevel);
+        }
+    }
+
     public static void GameStarted() {
         isGameStarted = true;
     }
@@ -61,3 +86,4 @@ public class GameManager : MonoBehaviour {
         }
     }
 }
+ 
