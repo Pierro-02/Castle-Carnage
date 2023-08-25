@@ -7,15 +7,13 @@ public class Enemy : MonoBehaviour {
 
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private int maxHealth;
-    [SerializeField] private float attackRate;
     [SerializeField] private int damage;
     [SerializeField] private Image healthBar;
     [SerializeField] private int coinsOnDeath;
+    [SerializeField] private int iD;
 
     private Animator animator;
     private EnemySpawner spawner;
-    private bool isAttacking;
-    private GameObject troopInRange;
     private int health;
 
     private Camera _cam;
@@ -32,7 +30,7 @@ public class Enemy : MonoBehaviour {
 
         spawner = GetComponentInParent<EnemySpawner>();
 
-        spawner.waves[spawner.getCurrentWaveIndex()].enemiesLeft--;
+        spawner.waves[spawner.GetCurrentWaveIndex()].enemiesLeft--;
     }
 
     private void Update () {
@@ -50,6 +48,10 @@ public class Enemy : MonoBehaviour {
         agent.SetDestination(spawner.GetDestination().position);
     }
 
+    public int GetDamage() {
+        return damage;
+    }
+
     public void TakeDamage(int damage) {
         health -= damage;
         UpdateHealth(health, maxHealth);
@@ -61,5 +63,9 @@ public class Enemy : MonoBehaviour {
 
     private void UpdateHealth(float currentHealth, float maxHealth) {
         healthBar.fillAmount = currentHealth / maxHealth;
+    }
+
+    public int GetID() {
+        return iD;
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Destination : MonoBehaviour {
@@ -7,7 +8,8 @@ public class Destination : MonoBehaviour {
     private const string OBJECT_LAYER = "Enemy";
 
     private void OnTriggerEnter(Collider collider) {
-        HealthManager.LifeLost();
+        int damage = collider.GetComponent<Enemy>().GetDamage();
+        HealthManager.LifeLost(damage);
         Debug.Log(collider.name + " should be deleted");
     }
 

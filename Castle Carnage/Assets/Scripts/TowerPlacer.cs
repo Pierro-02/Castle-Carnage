@@ -9,7 +9,7 @@ public class TowerPlacer : MonoBehaviour {
     [SerializeField] private TMP_Text archerPriceText, crystalPriceText;
     [SerializeField] private int archerPrice, crystalPrice;
     [SerializeField] private LayerMask layersToInclude;
-    [SerializeField] private NodeUI nodeUI;
+    //[SerializeField] private NodeUI nodeUI;
 
     private bool canPlace;
     private bool isArcherSelected;
@@ -57,13 +57,13 @@ public class TowerPlacer : MonoBehaviour {
 
                     tower.transform.localPosition = new Vector3(0, 0.55f, 0);
                 } else if (hit.collider.gameObject.layer == 12 && !canPlace) {
-                    Debug.Log("Tower Selected");
-                    nodeUI.Activate();
-                    nodeUI.SetPosition(hit.collider.gameObject.transform.position);
+                    //Debug.Log("Tower Selected");
+                    //nodeUI.Activate();
+                    //nodeUI.SetPosition(hit.collider.gameObject.transform.position);
 
                 } else {
-                    Debug.Log(hit.collider.gameObject.layer);
-                    nodeUI.Deactivate();
+                    //Debug.Log(hit.collider.gameObject.layer);
+                    //nodeUI.Deactivate();
                 }
             }
             canPlace = false;

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,12 +9,20 @@ public class GameManager : MonoBehaviour {
     [SerializeField] GameObject winPannel;
     [SerializeField] EnemySpawner[] waveSpawner;
     [SerializeField] LayerMask upgradableLayers;
+    [SerializeField] private TMP_Text _currentWave, maxWave;
 
     private bool isGameOver;
     private bool isGameWon;
     private static bool isGameStarted;
+    private static int currWave;
+    private static TMP_Text currentWaveText;
 
     private void Start() {
+        gameOverPannel.SetActive(false);
+        pausePannel.SetActive(false);
+        currWave = 0;
+        currentWaveText = _currentWave;
+        maxWave.text = waveSpawner[0].GetMaxWaveIndex().ToString();
         isGameStarted = false;
         isGameOver = false;
         isGameWon = false;
@@ -29,15 +38,12 @@ public class GameManager : MonoBehaviour {
             Time.timeScale = 0f;
             gameOverPannel.SetActive(true);
         }
-
-        //if (isGameStarted) {
-        //}
-        if (!isGameWon) {
-            isGameWon = true;
-            foreach (var wave in waveSpawner) {
+        //if (!isGameWon) {
+        //    isGameWon = true;
+        //    foreach (var wave in waveSpawner) {
                 
-            }
-        }
+        //    }
+        //}
     }
 
     public void Pause() {
@@ -72,7 +78,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public static void GameStarted() {
+    public void GameStarted() {
         isGameStarted = true;
     }
 
@@ -83,6 +89,13 @@ public class GameManager : MonoBehaviour {
 
         if (Physics.Raycast(ray, out hitPoint, Mathf.Infinity, upgradableLayers)) {
             //Show Upgrade
+        }
+    }
+
+    public static void UpdateWave(int id = 0) {
+        if (id == 0) {
+            currWave++;
+            currentWaveText.text = currWave.ToString();
         }
     }
 }

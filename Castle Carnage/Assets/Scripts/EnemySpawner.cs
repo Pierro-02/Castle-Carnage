@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
@@ -8,8 +9,11 @@ public class EnemySpawner : MonoBehaviour {
     [SerializeField] private float countdown;
     [SerializeField] private GameObject spawnPoint;
     [SerializeField] private GameObject destination;
-    
-    
+    [SerializeField] private GameObject wavePreviewPannel;
+    [SerializeField] private TMP_Text goblin1Count, goblin2Count, demonCount;
+    [SerializeField] private int iD;
+
+
     public Wave[] waves;
     private int currentWaveIndex = 0;
     private bool readyToCountdown;
@@ -23,6 +27,8 @@ public class EnemySpawner : MonoBehaviour {
 
 
     private void Start () {
+        InitGoblinCounts(0);
+
         wavesFinished = false;
 
         gameReady = false;
@@ -58,6 +64,8 @@ public class EnemySpawner : MonoBehaviour {
             readyToCountdown = true;
 
             currentWaveIndex++;
+            if (currentWaveIndex >= waves.Length)
+                InitGoblinCounts(currentWaveIndex);
         }
 
         if (readyToCountdown == true) {
@@ -65,6 +73,7 @@ public class EnemySpawner : MonoBehaviour {
         }
 
         if (countdown <= 0) {
+            GameManager.UpdateWave(iD);
             readyToCountdown = false;
 
             countdown = waves[currentWaveIndex].timeToNextWave;
@@ -94,8 +103,12 @@ public class EnemySpawner : MonoBehaviour {
         }
     }
 
-    public int getCurrentWaveIndex() {
+    public int GetCurrentWaveIndex() {
         return currentWaveIndex;
+    }
+
+    public int GetMaxWaveIndex() {
+        return waves.Length;
     }
 
     public Transform GetDestination() {
@@ -110,6 +123,30 @@ public class EnemySpawner : MonoBehaviour {
 
     public bool WavesFinished() {
         return wavesFinished;
+    }
+
+    private void InitGoblinCounts(int waveID) {
+        int gob1 = 0, gob2 = 0, dem = 0;
+        foreach (Enemy enemy in waves[waveID].enemies) {
+            int id = enemy.GetID();
+            switch (id) {
+                case 0:
+                    gob1++;
+                    break;
+                case 1:
+                    gob2++;
+                    break;
+                case 2:
+                    dem++;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        goblin1Count.text = gob1.ToString();
+        goblin2Count.text = gob2.ToString();
+        demonCount.text = dem.ToString();
     }
 }
 

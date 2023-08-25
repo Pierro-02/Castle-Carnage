@@ -12,7 +12,7 @@ public class CubePlacer : MonoBehaviour {
     [SerializeField] private int pathCounter;
     [SerializeField] private TMP_Text counterText;
     [SerializeField] private LayerMask layersToInclude, pathLayers, endLayer;
-    [SerializeField] private GameObject normalButton, activeButton;
+    [SerializeField] private GameObject normalButton;
 
     private Grid grid;
     private Economy eco;
@@ -25,9 +25,6 @@ public class CubePlacer : MonoBehaviour {
     private static bool isPathComplete = false;
 
     private void Awake() {
-        normalButton.SetActive(true);
-        activeButton.SetActive(false);
-
         isPathComplete = false;
 
         directions = new Vector3[4];
@@ -62,18 +59,15 @@ public class CubePlacer : MonoBehaviour {
     }
 
     public void PlaceSelected() {
-        activeButton.SetActive(true);
         placing = true;
         deleting = false;
     }
     public void DeleteSelected() {
-        activeButton.SetActive(false);
         placing = false;
         deleting = true;
     }
 
     public void OnDeselect() {
-        activeButton.SetActive(false);
         placing = false;
         deleting = false;
     }
