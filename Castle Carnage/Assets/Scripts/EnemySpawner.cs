@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
+using Unity.AI.Navigation;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour {
 
@@ -13,6 +16,8 @@ public class EnemySpawner : MonoBehaviour {
     [SerializeField] private GameObject wavePreviewPannel;
     [SerializeField] private TMP_Text goblin1Count, goblin2Count, demonCount;
     [SerializeField] private int iD;
+    [SerializeField] private GameObject indicatorContainer;
+    [SerializeField] private Image indicator;
 
 
     public Wave[] waves;
@@ -22,24 +27,26 @@ public class EnemySpawner : MonoBehaviour {
     private static bool gameReady = false;
     private bool wavesFinished;
     private int[] enemiesToSpawn;
-    private float previewTime;
-    private bool showPreview;
-    private List<Enemy> enemyList; 
+    private bool showingPreview;
+    private List<Enemy> enemyList;
 
-    //[SerializeField] private NavMeshAgent navMeshAgent;
-    //private NavMeshPath navMeshPath = new NavMeshPath();
+    private Canvas canvas;
+    private Animator anim;
 
+    private float initTimeOfNextWave;
 
     private void Start () {
+        anim = indicatorContainer.GetComponent<Animator>();
+
+        canvas = indicator.GetComponentInParent<Canvas>();
+
+        UpdatePreview(0);
+
+        initTimeOfNextWave = countdown;
+
         enemyList = new List<Enemy>();
 
-        wavePreviewPannel.SetActive(true);
-
-        showPreview = false;
-
-        previewTime = 3;
-
-        InitGoblinCounts(0);
+        showingPreview = false;
 
         wavesFinished = false;
 
@@ -61,6 +68,7 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     private void Update() {
+        UpdateIndicator();
         if (!gameReady) {
             return;
         }
@@ -76,27 +84,19 @@ public class EnemySpawner : MonoBehaviour {
             currentWaveIndex++;
         }
 
-        if (showPreview) {
-            previewTime -= Time.deltaTime;
-        }
-
-        if (previewTime <= 0) {
-            wavePreviewPannel.SetActive(false);
-            showPreview = false;
-            previewTime = 3;
-        }
-
         if (readyToCountdown == true) {
+            UpdateIndicator();
             countdown -= Time.deltaTime;
         }
 
         if (countdown <= 0) {
             if (currentWaveIndex < waves.Length)
-                InitGoblinCounts(currentWaveIndex);
+                UpdatePreview(currentWaveIndex);
             GameManager.UpdateWave(iD);
             readyToCountdown = false;
 
             countdown = waves[currentWaveIndex].timeToNextWave;
+            initTimeOfNextWave = countdown;
             StartCoroutine(SpawnWave());
         }
     }
@@ -148,7 +148,7 @@ public class EnemySpawner : MonoBehaviour {
         return wavesFinished;
     }
 
-    private void InitGoblinCounts(int waveID) {
+    private void UpdatePreview(int waveID) {
         int gob1 = 0, gob2 = 0, dem = 0;
         foreach (Enemy enemy in waves[waveID].enemies) {
             int id = enemy.GetID();
@@ -170,9 +170,6 @@ public class EnemySpawner : MonoBehaviour {
         goblin1Count.text = gob1.ToString();
         goblin2Count.text = gob2.ToString();
         demonCount.text = dem.ToString();
-
-        showPreview = true;
-        wavePreviewPannel.SetActive(true);
     }
 
     public bool CheckWin() {
@@ -185,6 +182,21 @@ public class EnemySpawner : MonoBehaviour {
             }
         }
         return true;
+    }
+
+    public void TogglePreview() {
+        if (!showingPreview) {
+            showingPreview = true;
+            wavePreviewPannel.SetActive(true);
+        } else {
+            showingPreview = false;
+            wavePreviewPannel.SetActive(false);
+        }
+    }
+
+    private void UpdateIndicator() {
+        canvas.transform.rotation = Quaternion.LookRotation(canvas.transform.position - Camera.main.transform.position);
+        indicator.fillAmount = (initTimeOfNextWave - countdown) / initTimeOfNextWave;
     }
 }
 

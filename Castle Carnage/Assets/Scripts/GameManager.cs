@@ -79,8 +79,10 @@ public class GameManager : MonoBehaviour {
             Debug.Log("No More Levels");
         } else if (currentLevel < 10) {
             string nextLevel = "Level 0" + currentLevel;
+            Debug.Log(nextLevel);
             SceneManager.LoadScene(nextLevel);
         }
+        Time.timeScale = 1f;
     }
 
     public void GameStarted() {

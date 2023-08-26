@@ -15,17 +15,6 @@ public class LevelManager : MonoBehaviour {
         lastLevel = maxLevels;
     }
 
-    //private void Awake() {
-
-    //	int unlockedlevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
-    //	for (int i = 0; i < buttons.Length; i++) {
-    //		buttons[i].interactable = false;
-    //	}
-    //	for (int i = 0; i < unlockedlevel; i++) {
-    //		buttons[i].interactable = true;
-    //	}
-
-    //}
     public static void SetCurrentLevel(int level) {
         currentLevel = level;
     } 
@@ -33,8 +22,13 @@ public class LevelManager : MonoBehaviour {
     public void OpenLevel(int levelId) {
 		currentLevel = levelId;
 
-		string LevelName = "Level 0" + levelId;
 
+        string LevelName;
+        if (levelId <= 9) {
+            LevelName = "Level 0" + levelId;
+        } else {
+            LevelName = "Level " + levelId;
+        }
 		Debug.Log(LevelName);
 
 		SceneManager.LoadScene(LevelName);

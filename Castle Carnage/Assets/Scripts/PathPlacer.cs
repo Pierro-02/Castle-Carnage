@@ -161,6 +161,17 @@ public class CubePlacer : MonoBehaviour {
         return isPathComplete;
     }
 
+    //private bool CalculateNewPath() {
+    //    spawnPosition.CalculatePath(targetPosition.position, navMeshPath);
+    //    print("New path calculated");
+    //    if (navMeshPath.status != UnityEngine.AI.NavMeshPathStatus.PathComplete) {
+    //        return false;
+    //    } else {
+    //        return true;
+    //    }
+    //}
+
+
     //private void TestRay(Vector3 pos) {
     //    if (pos != Vector3.zero) {
     //        Debug.DrawRay(pos, Vector3.forward * dis, Color.red);
