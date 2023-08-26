@@ -37,33 +37,18 @@ public class EnemySpawner : MonoBehaviour {
 
     private void Start () {
         anim = indicatorContainer.GetComponent<Animator>();
-
         canvas = indicator.GetComponentInParent<Canvas>();
-
         UpdatePreview(0);
-
         initTimeOfNextWave = countdown;
-
         enemyList = new List<Enemy>();
-
         showingPreview = false;
-
         wavesFinished = false;
-
         gameReady = false;
-
         readyToCountdown = true;
-
         enemiesToSpawn = new int[waves.Length];
-
-        //Debug.Log("Number of Waves: " + waves.Length);
-
         for (int i = 0; i < waves.Length; i++) {
             waves[i].enemiesLeft = waves[i].enemies.Length;
-
             enemiesToSpawn[i] = waves[i].enemies.Length;
-
-            //Debug.Log(enemiesToSpawn[i]);
         }
     }
 
@@ -101,26 +86,14 @@ public class EnemySpawner : MonoBehaviour {
         }
     }
 
-    private bool PathChecker() {
-        //if (navMeshAgent.CalculatePath(destination.gameObject.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete) {
-        //    return true;
-        //}
-        return false;
-    }
-
     private IEnumerator SpawnWave() {
         //Debug.Log(currentWaveIndex);
         if (currentWaveIndex < waves.Length) {
             int length = enemiesToSpawn[currentWaveIndex];
             for (int i = 0; i < length; i++) {
-                //Debug.Log("i: " + i);
-                //Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
                 enemyList.Add(Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform));
-                //enemyList.Add(enemy);
                 Enemy enemy = enemyList[enemyList.Count - 1];
-
                 enemy.transform.SetParent(spawnPoint.transform);
-
                 yield return new WaitForSeconds(waves[currentWaveIndex].timeToNextEnemy);
             }
         }
@@ -141,6 +114,8 @@ public class EnemySpawner : MonoBehaviour {
     public static void StartGame() {
         if (CubePlacer.GetIsPathComplete()) {
             gameReady = true;
+        } else {
+            gameReady = false;
         }
     }
 

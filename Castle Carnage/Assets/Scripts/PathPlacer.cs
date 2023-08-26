@@ -1,6 +1,6 @@
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.AI;
 
 public class CubePlacer : MonoBehaviour {
 
@@ -13,6 +13,7 @@ public class CubePlacer : MonoBehaviour {
     [SerializeField] private TMP_Text counterText;
     [SerializeField] private LayerMask layersToInclude, pathLayers, endLayer;
     [SerializeField] private GameObject normalButton;
+    
 
     private Grid grid;
     private Economy eco;
@@ -24,7 +25,14 @@ public class CubePlacer : MonoBehaviour {
 
     private static bool isPathComplete = false;
 
+    [SerializeField] private NavmeshBaker mesh;
+    [SerializeField] private GameObject targetPosition;
+    [SerializeField] private NavMeshAgent testAgent;
+    private NavMeshPath navMeshPath;
+
     private void Awake() {
+        testAgent.isStopped = true;
+        navMeshPath = new NavMeshPath();
         isPathComplete = false;
 
         directions = new Vector3[4];
@@ -53,6 +61,7 @@ public class CubePlacer : MonoBehaviour {
             }
             if (deleting == true) {
                 Remove();
+                isPathComplete = CalculateNewPath();
             }
             touching = false;
         }
@@ -89,6 +98,7 @@ public class CubePlacer : MonoBehaviour {
                     UpdatePathCounter(pathCounter);
                     Economy.SubtractCoins(pathPrice);
                     PlaceCubeNear(hitInfo.point);
+                    isPathComplete = CalculateNewPath();
                 }
 
             }
@@ -146,14 +156,6 @@ public class CubePlacer : MonoBehaviour {
             }
         }
 
-        if (isValid) {
-            foreach (Vector3 dir in directions) {
-                if (Physics.Raycast(point, dir, dist, endLayer)) {
-                    isPathComplete = true;
-                }
-            }
-        }
-
         return isValid;
     }
 
@@ -161,15 +163,15 @@ public class CubePlacer : MonoBehaviour {
         return isPathComplete;
     }
 
-    //private bool CalculateNewPath() {
-    //    spawnPosition.CalculatePath(targetPosition.position, navMeshPath);
-    //    print("New path calculated");
-    //    if (navMeshPath.status != UnityEngine.AI.NavMeshPathStatus.PathComplete) {
-    //        return false;
-    //    } else {
-    //        return true;
-    //    }
-    //}
+    private bool CalculateNewPath() {
+        mesh.Bake();
+        testAgent.CalculatePath(targetPosition.transform.position, navMeshPath);
+        if (navMeshPath.status != UnityEngine.AI.NavMeshPathStatus.PathComplete) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
 
     //private void TestRay(Vector3 pos) {

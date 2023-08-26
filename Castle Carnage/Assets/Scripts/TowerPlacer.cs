@@ -9,25 +9,19 @@ public class TowerPlacer : MonoBehaviour {
     [SerializeField] private TMP_Text archerPriceText, crystalPriceText;
     [SerializeField] private int archerPrice, crystalPrice;
     [SerializeField] private LayerMask layersToInclude;
-    //[SerializeField] private NodeUI nodeUI;
 
     private bool canPlace;
     private bool isArcherSelected;
-    //private bool isCrystalSelected;
 
-    // Start is called before the first frame update
     void Start() {
         isArcherSelected = false;
-        //isCrystalSelected = false;
 
         canPlace = false;
         UpdatePrice(archerPrice, archerPriceText);
         UpdatePrice(crystalPrice, crystalPriceText);
     }
 
-    // Update is called once per frame
     private void FixedUpdate() {
-        //Debug.Log("Touch Count: " + Input.touchCount + " Can Place: " + canPlace);
         if (Input.touchCount > 0) {
 
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -56,14 +50,6 @@ public class TowerPlacer : MonoBehaviour {
                     tower.transform.localScale = new Vector3(0.45f, 0.3f, 0.45f);
 
                     tower.transform.localPosition = new Vector3(0, 0.55f, 0);
-                } else if (hit.collider.gameObject.layer == 12 && !canPlace) {
-                    //Debug.Log("Tower Selected");
-                    //nodeUI.Activate();
-                    //nodeUI.SetPosition(hit.collider.gameObject.transform.position);
-
-                } else {
-                    //Debug.Log(hit.collider.gameObject.layer);
-                    //nodeUI.Deactivate();
                 }
             }
             canPlace = false;
@@ -76,14 +62,20 @@ public class TowerPlacer : MonoBehaviour {
 
     public void ArcherSelected() {
         isArcherSelected = true;
-        //isCrystalSelected = false;
         canPlace = true;
     }
 
     public void CrystalSelected() {
-        //isCrystalSelected = true;
         isArcherSelected = false;
         canPlace = true;
+    }
+
+    public int GetArcherPrice() {
+        return archerPrice;
+    }
+
+    public int GetCrystalPrice() {
+        return crystalPrice;
     }
 
     private bool CheckPrice() {

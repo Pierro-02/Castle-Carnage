@@ -89,16 +89,6 @@ public class GameManager : MonoBehaviour {
         isGameStarted = true;
     }
 
-    private void TowerUpgrade() {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        RaycastHit hitPoint;
-
-        if (Physics.Raycast(ray, out hitPoint, Mathf.Infinity, upgradableLayers)) {
-            //Show Upgrade
-        }
-    }
-
     public static void UpdateWave(int id = 0) {
         if (id == 0) {
             currWave++;

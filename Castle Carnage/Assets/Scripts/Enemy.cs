@@ -21,17 +21,11 @@ public class Enemy : MonoBehaviour {
 
     private void Start () {
         escaped = false;
-
         _cam = Camera.main;
-
         canvas = healthBar.GetComponentInParent<Canvas>();
-
         animator = GetComponentInChildren<Animator>();
-
         health = maxHealth;
-
         spawner = GetComponentInParent<EnemySpawner>();
-
         spawner.waves[spawner.GetCurrentWaveIndex()].enemiesLeft--;
     }
 

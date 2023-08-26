@@ -39,10 +39,6 @@ public class HealthManager : MonoBehaviour {
 
     public static void LifeLost(int life = 1) {
         currentHealth -= life;
-
-        Debug.Log(currentHealth);
-        Debug.Log("Game Over: " + IsGameOver());
-
         healthBar.fillAmount = currentHealth / maxHealth;
     }
 
