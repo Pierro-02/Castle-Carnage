@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -21,12 +22,23 @@ public class EnemySpawner : MonoBehaviour {
     private static bool gameReady = false;
     private bool wavesFinished;
     private int[] enemiesToSpawn;
+    private float previewTime;
+    private bool showPreview;
+    private List<Enemy> enemyList; 
 
     //[SerializeField] private NavMeshAgent navMeshAgent;
     //private NavMeshPath navMeshPath = new NavMeshPath();
 
 
     private void Start () {
+        enemyList = new List<Enemy>();
+
+        wavePreviewPannel.SetActive(true);
+
+        showPreview = false;
+
+        previewTime = 3;
+
         InitGoblinCounts(0);
 
         wavesFinished = false;
@@ -49,8 +61,6 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     private void Update() {
-        //Debug.Log("Path Exists: " + PathChecker());
-
         if (!gameReady) {
             return;
         }
@@ -64,8 +74,16 @@ public class EnemySpawner : MonoBehaviour {
             readyToCountdown = true;
 
             currentWaveIndex++;
-            if (currentWaveIndex >= waves.Length)
-                InitGoblinCounts(currentWaveIndex);
+        }
+
+        if (showPreview) {
+            previewTime -= Time.deltaTime;
+        }
+
+        if (previewTime <= 0) {
+            wavePreviewPannel.SetActive(false);
+            showPreview = false;
+            previewTime = 3;
         }
 
         if (readyToCountdown == true) {
@@ -73,6 +91,8 @@ public class EnemySpawner : MonoBehaviour {
         }
 
         if (countdown <= 0) {
+            if (currentWaveIndex < waves.Length)
+                InitGoblinCounts(currentWaveIndex);
             GameManager.UpdateWave(iD);
             readyToCountdown = false;
 
@@ -94,7 +114,10 @@ public class EnemySpawner : MonoBehaviour {
             int length = enemiesToSpawn[currentWaveIndex];
             for (int i = 0; i < length; i++) {
                 //Debug.Log("i: " + i);
-                Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
+                //Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
+                enemyList.Add(Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform));
+                //enemyList.Add(enemy);
+                Enemy enemy = enemyList[enemyList.Count - 1];
 
                 enemy.transform.SetParent(spawnPoint.transform);
 
@@ -147,6 +170,21 @@ public class EnemySpawner : MonoBehaviour {
         goblin1Count.text = gob1.ToString();
         goblin2Count.text = gob2.ToString();
         demonCount.text = dem.ToString();
+
+        showPreview = true;
+        wavePreviewPannel.SetActive(true);
+    }
+
+    public bool CheckWin() {
+        if (enemyList.Count == 0)
+            return false; 
+
+        foreach (var enemy in enemyList) {
+            if (!enemy.IsKilled()) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 

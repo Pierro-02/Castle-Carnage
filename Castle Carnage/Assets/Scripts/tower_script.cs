@@ -11,8 +11,10 @@ public class ArcherTower : MonoBehaviour {
     private float timeSinceLastShot = 0f;
     private GameObject target;
     private Animator anim;
+    private AudioSource fireSound;
 
     private void Start() {
+        fireSound = GetComponent<AudioSource>();
         anim = GetComponentInChildren<Animator>();
     }
 
@@ -44,6 +46,7 @@ public class ArcherTower : MonoBehaviour {
     }
 
     private void ShootArrow() {
+        fireSound.Play();
         GameObject arrow = Instantiate(arrowPrefab, shootingPoint.position, shootingPoint.rotation);
         arrow.GetComponent<ArrowScript>().EnemyEntered(target);
     }

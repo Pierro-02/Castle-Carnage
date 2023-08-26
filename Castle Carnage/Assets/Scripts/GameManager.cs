@@ -16,10 +16,13 @@ public class GameManager : MonoBehaviour {
     private static bool isGameStarted;
     private static int currWave;
     private static TMP_Text currentWaveText;
+    private float waitForSeconds;
 
     private void Start() {
+        waitForSeconds = 2;
         gameOverPannel.SetActive(false);
         pausePannel.SetActive(false);
+        winPannel.SetActive(false);
         currWave = 0;
         currentWaveText = _currentWave;
         maxWave.text = waveSpawner[0].GetMaxWaveIndex().ToString();
@@ -29,7 +32,7 @@ public class GameManager : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        if (isGameWon) {
+        if (isGameWon && waitForSeconds <= 0) {
             return;
         }
 
@@ -37,13 +40,15 @@ public class GameManager : MonoBehaviour {
             isGameOver = true;
             Time.timeScale = 0f;
             gameOverPannel.SetActive(true);
+        } else if (isGameWon && !isGameOver) {
+            waitForSeconds -= Time.deltaTime;
+            if (waitForSeconds <= 0) {
+                isGameWon = true;
+                Time.timeScale = 0f;
+                winPannel.SetActive(true);
+            }
         }
-        //if (!isGameWon) {
-        //    isGameWon = true;
-        //    foreach (var wave in waveSpawner) {
-                
-        //    }
-        //}
+        CheckWin();
     }
 
     public void Pause() {
@@ -97,6 +102,16 @@ public class GameManager : MonoBehaviour {
             currWave++;
             currentWaveText.text = currWave.ToString();
         }
+    }
+
+    private void CheckWin() {
+        bool win = true;
+        foreach (var spawner in waveSpawner) {
+            if (!spawner.CheckWin()) {
+                win = false;
+            }
+        }
+        isGameWon = win;
     }
 }
  

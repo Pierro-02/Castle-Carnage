@@ -39,12 +39,12 @@ public class TowerPlacer : MonoBehaviour {
                     if (isArcherSelected) {
                         tower = Instantiate(archerTower);
                         Economy.SubtractCoins(archerPrice);
-                        archerPrice += (int)((float)archerPrice / 2f);
+                        archerPrice += (int)((float)archerPrice * 0.4f);
                         UpdatePrice(archerPrice, archerPriceText);
                     } else {
                         tower = Instantiate(crystalTower);
                         Economy.SubtractCoins(crystalPrice);
-                        crystalPrice += (int)((float)crystalPrice / 2f);
+                        crystalPrice += (int)((float)crystalPrice * 0.2f);
                         UpdatePrice(crystalPrice, crystalPriceText);
                     }
 

@@ -15,7 +15,7 @@ public class Destination : MonoBehaviour {
 
     private void OnTriggerStay(Collider collider) {
         if (collider.gameObject.tag == OBJECT_LAYER) {
-            Destroy(collider.gameObject);
+            collider.GetComponent<Enemy>().Escaped();
         }
     }
 }

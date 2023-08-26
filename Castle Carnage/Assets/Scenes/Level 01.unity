@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -211,7 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 15319403}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 15319402}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.83, y: 0, z: 0}
+  m_LocalPosition: {x: 0.8299999, y: -2.583871, z: 1.3461539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -238,6 +242,134 @@ Transform:
   - {fileID: 1309072607}
   m_Father: {fileID: 1256664677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &17513160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17513161}
+  - component: {fileID: 17513162}
+  m_Layer: 0
+  m_Name: BG 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &17513161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17513160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 404073368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &17513162
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17513160}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 152d8abe46726d94680dd4f00277b8e3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.775
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &23357801
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -502,6 +638,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -582,6 +722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -658,7 +802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 72043799}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +818,7 @@ Transform:
   m_GameObject: {fileID: 72043798}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.72, y: 0, z: 0}
+  m_LocalPosition: {x: -1.72, y: -2.583871, z: 1.3461539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -831,6 +975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -909,6 +1057,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1065,7 +1217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 104119185}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1233,7 @@ Transform:
   m_GameObject: {fileID: 104119184}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.79, z: 1.1670333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1101,7 +1253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 105257818}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1117,7 +1269,7 @@ Transform:
   m_GameObject: {fileID: 105257817}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.32, y: 0, z: 0.08}
+  m_LocalPosition: {x: 3.3199997, y: -2.583871, z: 1.4261538}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1257,6 +1409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -1391,6 +1547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -1485,15 +1645,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140791656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0014508313}
-  m_LocalScale: {x: 3.7046165, y: 8.840326, z: 3.7046165}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 2.5298064, y: 6.036877, z: 2.5298064}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1587712155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -318.18216, y: -0.00036375088}
+  m_AnchoredPosition: {x: -230, y: -244}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140791658
@@ -1572,7 +1732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8ab87ca8925f5af4cae57441a650300b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 423df590d68229647a69ea0d4e0adb86, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1601,6 +1761,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1681,6 +1845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -1760,6 +1928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -1838,6 +2010,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1921,7 +2097,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 167606519}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1937,7 +2113,7 @@ Transform:
   m_GameObject: {fileID: 167606518}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.5806453, z: 1.4879122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1959,6 +2135,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2039,6 +2219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -2118,6 +2302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -2191,7 +2379,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 809611566}
+    m_TransformParent: {fileID: 1606169109}
     m_Modifications:
     - target: {fileID: 1000011971105270, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_Name
@@ -2199,7 +2387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011971105270, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalScale.x
@@ -2215,15 +2403,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.71000004
+      value: -0.013000011
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.060009
+      value: -0.05099094
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.5799999
+      value: 0.045000076
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2279,6 +2467,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2359,6 +2551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -2437,6 +2633,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2519,7 +2719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2531,19 +2731,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22999999
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.378
+      value: 0.27831075
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7991748
+      value: 0.008174896
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.161
+      value: 0.123615324
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2679,6 +2879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -2757,6 +2961,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2837,6 +3045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -2915,6 +3127,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2995,6 +3211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -3073,6 +3293,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3296,6 +3520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -3407,6 +3635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -3480,7 +3712,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 809611566}
+    m_TransformParent: {fileID: 1606169109}
     m_Modifications:
     - target: {fileID: 1000013880558708, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_Name
@@ -3488,7 +3720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013880558708, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalScale.x
@@ -3504,15 +3736,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7910001
+      value: -0.0940001
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0600092
+      value: -0.0509907
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.4109999
+      value: 0.2140001
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3568,6 +3800,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3648,6 +3884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -3726,6 +3966,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3806,6 +4050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -3884,6 +4132,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4124,7 +4376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011971105270, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalScale.x
@@ -4205,6 +4457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -4283,6 +4539,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4363,6 +4623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -4441,6 +4705,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4521,6 +4789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -4599,6 +4871,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4679,6 +4955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -4757,6 +5037,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4918,31 +5202,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010834115316, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21
+      value: 0.20999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21
+      value: 0.20999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21
+      value: 0.20999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9060001
+      value: -0.34784603
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0600071
+      value: -0.050992876
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.796
+      value: 0.030923074
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4998,6 +5282,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5066,6 +5354,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 346565520}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &349927966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349927967}
+  - component: {fileID: 349927969}
+  - component: {fileID: 349927968}
+  m_Layer: 5
+  m_Name: Defeat Logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &349927967
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349927966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.371568, y: 6.371568, z: 6.371568}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1142628587}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -38.00006, y: 115}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &349927968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349927966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c5ed7fd0a5e52a44ba9c335e60b3dfd7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &349927969
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349927966}
+  m_CullTransparentMesh: 1
 --- !u!1001 &353276455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5077,6 +5440,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5154,7 +5521,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 353689360}
-  m_Layer: 7
+  - component: {fileID: 353689361}
+  m_Layer: 13
   m_Name: blockedrocks (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5170,9 +5538,9 @@ Transform:
   m_GameObject: {fileID: 353689359}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -1.966, y: 1.111, z: 0.51}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1677451080}
   - {fileID: 346443593}
@@ -5180,6 +5548,27 @@ Transform:
   - {fileID: 1138149465}
   m_Father: {fileID: 809611566}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &353689361
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353689359}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.83, y: 0.1, z: 0.83}
+  m_Center: {x: -0.033414364, y: 0, z: 0.019685946}
 --- !u!1 &357692706
 GameObject:
   m_ObjectHideFlags: 0
@@ -5189,7 +5578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 357692707}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5205,7 +5594,7 @@ Transform:
   m_GameObject: {fileID: 357692706}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.32, y: 0, z: 0.08}
+  m_LocalPosition: {x: 3.7860198, y: -2.83, z: 1.2800006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5222,7 +5611,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 809611566}
+    m_TransformParent: {fileID: 1606169109}
     m_Modifications:
     - target: {fileID: 1000013560862338, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_Name
@@ -5230,7 +5619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013560862338, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalScale.x
@@ -5246,15 +5635,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6689999
+      value: 0.028000116
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: -0.0009999275
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8609998
+      value: -0.23599982
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5313,11 +5702,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.22
+      value: 0.21999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.y
@@ -5325,19 +5714,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22
+      value: 0.22000001
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.447
+      value: 0.20931056
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7991748
+      value: 0.008174896
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.543
+      value: -0.2583847
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5393,6 +5782,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5473,6 +5866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -5551,6 +5948,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5631,6 +6032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -5709,6 +6114,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5789,6 +6198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -5865,7 +6278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 401204739}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5881,7 +6294,7 @@ Transform:
   m_GameObject: {fileID: 401204738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.72, y: 0, z: 0}
+  m_LocalPosition: {x: -1.7200005, y: -2.5806453, z: 1.487912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5903,6 +6316,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -5971,6 +6388,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 402354224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &404073367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404073368}
+  - component: {fileID: 404073369}
+  m_Layer: 0
+  m_Name: Sound System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404073368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404073367}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 17513161}
+  - {fileID: 604512483}
+  - {fileID: 1693448329}
+  m_Father: {fileID: 1375994302}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &404073369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404073367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690bbb599865fa94d9d28228de140cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backGroundMusic:
+  - {fileID: 17513162}
+  - {fileID: 604512484}
+  m_deathSound: {fileID: 1693448330}
 --- !u!1 &410276061
 GameObject:
   m_ObjectHideFlags: 0
@@ -6117,6 +6585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -6196,6 +6668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -6274,6 +6750,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -6505,7 +6985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456486103}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6521,7 +7001,7 @@ Transform:
   m_GameObject: {fileID: 456486102}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1899996, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 4.1900005, y: -2.5806453, z: 1.5679125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6755,7 +7235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 477683200}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6771,7 +7251,7 @@ Transform:
   m_GameObject: {fileID: 477683199}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0399995, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 5.0399995, y: -2.79, z: 1.2470335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6793,6 +7273,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -6873,6 +7357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -6952,6 +7440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -7030,6 +7522,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7186,7 +7682,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 503880298}
-  m_Layer: 0
+  - component: {fileID: 503880299}
+  m_Layer: 13
   m_Name: trees_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7202,7 +7699,7 @@ Transform:
   m_GameObject: {fileID: 503880297}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.47, y: 0.31, z: 0}
+  m_LocalPosition: {x: -4.824, y: 1.11, z: 0}
   m_LocalScale: {x: 1.03, y: 0.31, z: 0.91}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7219,6 +7716,27 @@ Transform:
   - {fileID: 1402424117}
   m_Father: {fileID: 1427036269}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &503880299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503880297}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.865055, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &507479154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7307,7 +7825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 539303983}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7323,7 +7841,7 @@ Transform:
   m_GameObject: {fileID: 539303982}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.85, y: 0, z: 0}
+  m_LocalPosition: {x: -0.85, y: -2.79, z: 1.1670333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7452,6 +7970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -7563,7 +8085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353f6963d334af14da956a134aefcbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialAmount: 500
+  initialAmount: 300
   text: {fileID: 622275761}
 --- !u!1001 &561228119
 PrefabInstance:
@@ -7576,6 +8098,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7658,7 +8184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013880558708, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalScale.x
@@ -7674,15 +8200,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6710002
+      value: -0.11284617
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0600092
+      value: -0.050990675
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.949
+      value: 0.18392307
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7738,6 +8264,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7964,30 +8494,23 @@ MonoBehaviour:
   countdown: 1
   spawnPoint: {fileID: 1058988016}
   destination: {fileID: 792180854}
-  wavePreviewPannel: {fileID: 0}
+  wavePreviewPannel: {fileID: 1905195103}
   goblin1Count: {fileID: 76438921}
   goblin2Count: {fileID: 1138738289}
   demonCount: {fileID: 675393212}
   iD: 0
   waves:
   - enemies:
-    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
-    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
-    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
-    timeToNextEnemy: 1
-    timeToNextWave: 1
-    enemiesLeft: 0
-  - enemies:
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
-    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
-    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
-    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     timeToNextEnemy: 1
-    timeToNextWave: 1
+    timeToNextWave: 5
     enemiesLeft: 0
 --- !u!4 &582725364
 Transform:
@@ -8090,6 +8613,26 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4402134415736424113, guid: e89c2aa8f0d867b49a0933d3229b8e7d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402134415736424113, guid: e89c2aa8f0d867b49a0933d3229b8e7d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.3805691
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402134415736424113, guid: e89c2aa8f0d867b49a0933d3229b8e7d,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402134415736424113, guid: e89c2aa8f0d867b49a0933d3229b8e7d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.06967479
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8112,6 +8655,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -8189,7 +8736,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 594739636}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8205,7 +8752,7 @@ Transform:
   m_GameObject: {fileID: 594739635}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.46601933, y: -2.83, z: 1.2000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8227,6 +8774,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -8304,7 +8855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 599052032}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8320,7 +8871,7 @@ Transform:
   m_GameObject: {fileID: 599052031}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0399995, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 5.0399995, y: -2.583871, z: 1.426154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8331,6 +8882,242 @@ Transform:
   - {fileID: 381296087}
   m_Father: {fileID: 1256664677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &602976035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602976036}
+  m_Layer: 9
+  m_Name: Obstacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &602976036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602976035}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 809611566}
+  - {fileID: 960747180}
+  m_Father: {fileID: 1043308673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &604512482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604512483}
+  - component: {fileID: 604512484}
+  m_Layer: 0
+  m_Name: BG 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &604512483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604512482}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 404073368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &604512484
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604512482}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4e471a86bdd2c994fb275243ac091c3a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.786
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &610879342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610879343}
+  - component: {fileID: 610879345}
+  - component: {fileID: 610879344}
+  m_Layer: 5
+  m_Name: Victory Logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &610879343
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610879342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5.414033, y: 5.414033, z: 5.414033}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1587712155}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 117}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &610879344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610879342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a9939c57ada1f9b49a7e088e5ed0d581, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &610879345
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610879342}
+  m_CullTransparentMesh: 1
 --- !u!1001 &614220376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8342,6 +9129,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -8422,6 +9213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -8501,6 +9296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -8579,6 +9378,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -9057,6 +9860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -9151,15 +9958,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642533057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00077892427}
-  m_LocalScale: {x: 3.7046165, y: 8.840326, z: 3.7046165}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5455885, y: 6.0745373, z: 2.5455885}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1142628587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -318.18118, y: -136.3631}
+  m_AnchoredPosition: {x: -258.18112, y: -331}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642533059
@@ -9268,6 +10075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -9349,11 +10160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.22
+      value: 0.21999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.y
@@ -9361,19 +10172,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22
+      value: 0.22000001
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.919
+      value: -0.26268923
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7991753
+      value: 0.008175373
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2372947
+      value: 0.04732059
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9429,6 +10240,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -9584,6 +10399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -9663,6 +10482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -9741,6 +10564,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -9900,6 +10727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -9978,6 +10809,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -10192,6 +11027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -10270,6 +11109,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -10712,6 +11555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -10867,7 +11714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718380229}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10883,7 +11730,7 @@ Transform:
   m_GameObject: {fileID: 718380228}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.49, y: 0, z: 0}
+  m_LocalPosition: {x: 2.4899998, y: -2.79, z: 1.1670333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10905,6 +11752,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -11194,6 +12045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -11273,6 +12128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -11351,6 +12210,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -11609,6 +12472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -11846,6 +12713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -11925,6 +12796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -12003,6 +12878,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -12342,15 +13221,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801639138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0016377729}
-  m_LocalScale: {x: 3.7046165, y: 8.840326, z: 3.7046165}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00025749207}
+  m_LocalScale: {x: 2.5298064, y: 6.036877, z: 2.5298064}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1587712155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318.18216, y: 0.00016649203}
+  m_AnchoredPosition: {x: 241.99936, y: -243.99977}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &801639140
@@ -12459,6 +13338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -12538,6 +13421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -12614,7 +13501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809611566}
-  m_Layer: 7
+  m_Layer: 13
   m_Name: Rocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12629,19 +13516,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809611565}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1950756250}
-  - {fileID: 194302370}
-  - {fileID: 908603845}
-  - {fileID: 282255514}
-  - {fileID: 370823017}
   - {fileID: 1606169109}
   - {fileID: 353689360}
-  m_Father: {fileID: 1043308673}
+  m_Father: {fileID: 602976036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &821350184
 PrefabInstance:
@@ -12654,6 +13537,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -12734,6 +13621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -12801,81 +13692,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 826820410}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &827458376
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 827458377}
-  - component: {fileID: 827458379}
-  - component: {fileID: 827458378}
-  m_Layer: 5
-  m_Name: Pause BG
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &827458377
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827458376}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.208329, y: 5.3382726, z: 8.3981}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1587712155}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &827458378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827458376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b5731cee1a9521a4597f79cfe1c6bbbe, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &827458379
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827458376}
-  m_CullTransparentMesh: 1
 --- !u!1 &838003061
 GameObject:
   m_ObjectHideFlags: 0
@@ -12885,7 +13701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 838003062}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12901,7 +13717,7 @@ Transform:
   m_GameObject: {fileID: 838003061}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.72, y: 0, z: 0}
+  m_LocalPosition: {x: -1.72, y: -2.79, z: 1.1670333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12923,6 +13739,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -13003,6 +13823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -13082,6 +13906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -13158,7 +13986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845586570}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13174,7 +14002,7 @@ Transform:
   m_GameObject: {fileID: 845586569}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.85, y: 0, z: 0}
+  m_LocalPosition: {x: -0.8500004, y: -2.5806453, z: 1.4879123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13199,11 +14027,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.16
+      value: 0.15999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.y
@@ -13211,19 +14039,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.16
+      value: 0.16000001
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.6314645
+      value: 0.024846109
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7991755
+      value: 0.0081756115
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.298
+      value: -0.013384715
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13279,6 +14107,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -13438,6 +14270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -13514,7 +14350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 870896259}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13530,7 +14366,7 @@ Transform:
   m_GameObject: {fileID: 870896258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1899996, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 4.656019, y: -2.83, z: 1.2800002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13552,6 +14388,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -13632,6 +14472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -13711,6 +14555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -13784,7 +14632,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 809611566}
+    m_TransformParent: {fileID: 1606169109}
     m_Modifications:
     - target: {fileID: 1000010834115316, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_Name
@@ -13792,7 +14640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010834115316, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalScale.x
@@ -13808,15 +14656,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.026
+      value: -0.329
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0600071
+      value: -0.050992846
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.5639999
+      value: 0.06100011
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13872,6 +14720,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -13952,6 +14804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -14028,7 +14884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918785790}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14044,7 +14900,7 @@ Transform:
   m_GameObject: {fileID: 918785789}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.583871, z: 1.3461539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14066,6 +14922,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -14146,6 +15006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -14224,6 +15088,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -14380,8 +15248,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 960747180}
-  m_Layer: 7
-  m_Name: trees (11)
+  - component: {fileID: 960747181}
+  m_Layer: 13
+  m_Name: 'Obstacle Trees '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14396,8 +15265,8 @@ Transform:
   m_GameObject: {fileID: 960747179}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.05, y: -1.68, z: 3.6}
-  m_LocalScale: {x: 1.03, y: 1, z: 0.91}
+  m_LocalPosition: {x: -0.476, y: 1.111, z: 2.491}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 226760979}
@@ -14405,8 +15274,29 @@ Transform:
   - {fileID: 1627857137}
   - {fileID: 852218494}
   - {fileID: 644331905}
-  m_Father: {fileID: 1043308673}
+  m_Father: {fileID: 602976036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &960747181
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960747179}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.1, z: 1}
+  m_Center: {x: -0.033414364, y: -0.009868562, z: 0.019685954}
 --- !u!1 &965542893
 GameObject:
   m_ObjectHideFlags: 0
@@ -14884,6 +15774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -14960,7 +15854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 965806919}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14976,7 +15870,7 @@ Transform:
   m_GameObject: {fileID: 965806918}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.83, y: 0, z: 0}
+  m_LocalPosition: {x: 1.2960196, y: -2.83, z: 1.2000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14998,6 +15892,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -15157,6 +16055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -15235,6 +16137,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -15315,6 +16221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -15393,6 +16303,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -15473,6 +16387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -15551,6 +16469,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -15631,6 +16553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -15710,6 +16636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -15788,6 +16718,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -15902,6 +16836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -15980,6 +16918,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -16178,6 +17120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -16276,10 +17222,9 @@ Transform:
   m_Children:
   - {fileID: 1272161869}
   - {fileID: 1427036269}
-  - {fileID: 809611566}
   - {fileID: 1748116616}
-  - {fileID: 960747180}
   - {fileID: 1821708349}
+  - {fileID: 602976036}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058988016
@@ -16324,6 +17269,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -16406,7 +17355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010834115316, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000013326358866, guid: 730704ffabda34d8ba9a945aad85e3be, type: 3}
       propertyPath: m_LocalScale.x
@@ -16608,7 +17557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1080324264}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16624,7 +17573,7 @@ Transform:
   m_GameObject: {fileID: 1080324263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.32, y: 0, z: 0.08}
+  m_LocalPosition: {x: 3.3199997, y: -2.79, z: 1.2470335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16726,6 +17675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -16804,6 +17757,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -16884,6 +17841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -16962,6 +17923,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -17042,6 +18007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -17118,7 +18087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1116015429}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17134,7 +18103,7 @@ Transform:
   m_GameObject: {fileID: 1116015428}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8699994, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 5.869999, y: -2.79, z: 1.2470335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17156,6 +18125,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -17235,6 +18208,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -17575,11 +18552,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013560862338, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.11
+      value: 0.10999999
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalScale.y
@@ -17591,15 +18568,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.549
+      value: 0.009154081
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: -0.0009998908
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.499
+      value: -0.2660769
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17790,6 +18767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -17874,7 +18855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1142628587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17887,6 +18868,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 349927967}
   - {fileID: 642533058}
   - {fileID: 1864632324}
   m_Father: {fileID: 106366010}
@@ -17945,6 +18927,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -18025,6 +19011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -18103,6 +19093,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -18183,6 +19177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -18261,6 +19259,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -18341,6 +19343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -18420,6 +19426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -18498,6 +19508,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -18740,7 +19754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1186765893}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18756,7 +19770,7 @@ Transform:
   m_GameObject: {fileID: 1186765892}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.85, y: 0, z: 0}
+  m_LocalPosition: {x: -0.85, y: -2.583871, z: 1.3461539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18944,7 +19958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1194079860}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18960,7 +19974,7 @@ Transform:
   m_GameObject: {fileID: 1194079859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.6999993, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 7.1660204, y: -2.83, z: 1.2800002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18982,6 +19996,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -19062,6 +20080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -19141,6 +20163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -19219,6 +20245,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -19436,7 +20466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013880558708, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000013014094432, guid: 2dfc697bf327e401687be9130ba13f2a, type: 3}
       propertyPath: m_LocalScale.x
@@ -19517,6 +20547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -19595,6 +20629,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -19675,6 +20713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -19751,7 +20793,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1256664677}
-  m_Layer: 0
+  - component: {fileID: 1256664678}
+  m_Layer: 13
   m_Name: trees_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19767,7 +20810,7 @@ Transform:
   m_GameObject: {fileID: 1256664676}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.31, z: -3.63}
+  m_LocalPosition: {x: 0, y: 1.111, z: -4.855}
   m_LocalScale: {x: 1.03, y: 0.31, z: 0.91}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19784,6 +20827,27 @@ Transform:
   - {fileID: 2094037911}
   m_Father: {fileID: 1427036269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1256664678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256664676}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.951886, y: 1, z: 0.99999964}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1257161699
 GameObject:
   m_ObjectHideFlags: 0
@@ -19923,6 +20987,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -20240,6 +21308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -20495,7 +21567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1276689542}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20511,7 +21583,7 @@ Transform:
   m_GameObject: {fileID: 1276689541}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.66, y: 0, z: 0}
+  m_LocalPosition: {x: 2.1260197, y: -2.83, z: 1.1999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20744,6 +21816,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -21035,6 +22111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -21113,6 +22193,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -21193,6 +22277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -21272,6 +22360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -21348,7 +22440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1317096169}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21364,7 +22456,7 @@ Transform:
   m_GameObject: {fileID: 1317096168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8699994, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 6.33602, y: -2.83, z: 1.2800002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21386,6 +22478,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -21709,7 +22805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013560862338, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012283337776, guid: d11e5432b77db44b08a862109200acac, type: 3}
       propertyPath: m_LocalScale.x
@@ -21790,6 +22886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -21868,6 +22968,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -21948,6 +23052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -22027,6 +23135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -22103,7 +23215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1363360619}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22119,7 +23231,7 @@ Transform:
   m_GameObject: {fileID: 1363360618}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.49, y: 0, z: 0}
+  m_LocalPosition: {x: 2.9560199, y: -2.83, z: 1.2000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22141,6 +23253,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -22241,6 +23357,7 @@ Transform:
   - {fileID: 267181040}
   - {fileID: 1993129314}
   - {fileID: 1019113093}
+  - {fileID: 404073368}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1381752753
@@ -22254,6 +23371,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -22331,7 +23452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1387082170}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22347,7 +23468,7 @@ Transform:
   m_GameObject: {fileID: 1387082169}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.49, y: 0, z: 0}
+  m_LocalPosition: {x: 2.49, y: -2.5806453, z: 1.4879122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22367,7 +23488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1389648747}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22383,7 +23504,7 @@ Transform:
   m_GameObject: {fileID: 1389648746}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.49, y: 0, z: 0}
+  m_LocalPosition: {x: 2.4899998, y: -2.583871, z: 1.3461539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22403,7 +23524,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1395421087}
-  m_Layer: 0
+  - component: {fileID: 1395421088}
+  m_Layer: 13
   m_Name: trees_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22419,23 +23541,44 @@ Transform:
   m_GameObject: {fileID: 1395421086}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.98, y: -1.72, z: -0.26}
+  m_LocalPosition: {x: 4.888, y: 1.11, z: 0.22}
   m_LocalScale: {x: 1.03, y: 1, z: 0.91}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1658229690}
-  - {fileID: 1805903581}
-  - {fileID: 594739636}
-  - {fileID: 965806919}
-  - {fileID: 1276689542}
-  - {fileID: 1363360619}
-  - {fileID: 357692707}
-  - {fileID: 870896259}
-  - {fileID: 1746840333}
-  - {fileID: 1317096169}
   - {fileID: 1194079860}
+  - {fileID: 1317096169}
+  - {fileID: 1746840333}
+  - {fileID: 870896259}
+  - {fileID: 357692707}
+  - {fileID: 1363360619}
+  - {fileID: 1276689542}
+  - {fileID: 965806919}
+  - {fileID: 594739636}
+  - {fileID: 1805903581}
+  - {fileID: 1658229690}
   m_Father: {fileID: 1427036269}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &1395421088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395421086}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.256996, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1395642030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22447,6 +23590,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -22524,7 +23671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1402424117}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22540,7 +23687,7 @@ Transform:
   m_GameObject: {fileID: 1402424116}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.6999993, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 6.700001, y: -2.5806453, z: 1.5679125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22562,6 +23709,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -22642,6 +23793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -22720,6 +23875,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -22800,6 +23959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -22879,6 +24042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -22955,7 +24122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1427036269}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23072,6 +24239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -23151,6 +24322,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -23227,7 +24402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460843770}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23243,7 +24418,7 @@ Transform:
   m_GameObject: {fileID: 1460843769}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.66, y: 0, z: 0}
+  m_LocalPosition: {x: 1.6599998, y: -2.583871, z: 1.3461539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23265,6 +24440,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -23379,7 +24558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePannel: {fileID: 2088688107}
   gameOverPannel: {fileID: 1142628586}
-  winPannel: {fileID: 0}
+  winPannel: {fileID: 1587712154}
   waveSpawner:
   - {fileID: 582725363}
   upgradableLayers:
@@ -23398,6 +24577,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -23478,6 +24661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -23556,6 +24743,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -23711,6 +24902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -23787,7 +24982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1505727166}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23803,7 +24998,7 @@ Transform:
   m_GameObject: {fileID: 1505727165}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.66, y: 0, z: 0}
+  m_LocalPosition: {x: 1.6600002, y: -2.5806453, z: 1.4879122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23825,6 +25020,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -23904,6 +25103,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -24109,6 +25312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -24220,6 +25427,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -24470,7 +25681,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 827458377}
+  - {fileID: 610879343}
   - {fileID: 140791657}
   - {fileID: 801639139}
   m_Father: {fileID: 106366010}
@@ -24590,7 +25801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1591388274}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24606,7 +25817,7 @@ Transform:
   m_GameObject: {fileID: 1591388273}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0399995, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 5.04, y: -2.5806453, z: 1.5679125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24732,6 +25943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -24810,6 +26025,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -24890,6 +26109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -24966,7 +26189,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606169109}
-  m_Layer: 7
+  - component: {fileID: 1606169110}
+  m_Layer: 13
   m_Name: blockedrocks (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24982,12 +26206,37 @@ Transform:
   m_GameObject: {fileID: 1606169108}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_LocalPosition: {x: -0.459, y: 1.111, z: -2.013}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 194302370}
+  - {fileID: 908603845}
+  - {fileID: 282255514}
+  - {fileID: 370823017}
   m_Father: {fileID: 809611566}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1606169110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606169108}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.83, y: 0.1, z: 0.83}
+  m_Center: {x: -0.033414364, y: 0, z: 0.019685946}
 --- !u!1001 &1607903186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24999,6 +26248,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -25079,6 +26332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -25157,6 +26414,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -25273,7 +26534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1623726831}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25289,7 +26550,7 @@ Transform:
   m_GameObject: {fileID: 1623726830}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8699994, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 5.870001, y: -2.5806453, z: 1.5679125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25311,6 +26572,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -25390,6 +26655,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -25599,7 +26868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1626989988}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25615,7 +26884,7 @@ Transform:
   m_GameObject: {fileID: 1626989987}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.6999993, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 6.699999, y: -2.79, z: 1.2470335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25640,11 +26909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.22
+      value: 0.21999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.y
@@ -25652,19 +26921,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22
+      value: 0.22000001
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.819
+      value: -0.16268931
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7991748
+      value: 0.008174896
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.526
+      value: -0.24138467
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25720,6 +26989,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -25879,6 +27152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -25955,7 +27232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1658229690}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25971,7 +27248,7 @@ Transform:
   m_GameObject: {fileID: 1658229689}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.72, y: 0, z: 0}
+  m_LocalPosition: {x: -1.253981, y: -2.83, z: 1.2000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25993,6 +27270,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -26073,6 +27354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -26152,6 +27437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -26230,6 +27519,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -26312,31 +27605,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011971105270, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21
+      value: 0.20999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21
+      value: 0.20999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21
+      value: 0.20999998
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5900002
+      value: -0.03184612
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.060009
+      value: -0.05099095
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.78
+      value: 0.014923078
       objectReference: {fileID: 0}
     - target: {fileID: 4000012683185016, guid: 7b1aa803e261c42ad8d0c4972a9a5d15, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26392,6 +27685,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -26683,7 +27980,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1692920133}
-  m_Layer: 0
+  - component: {fileID: 1692920134}
+  m_Layer: 13
   m_Name: trees_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26699,7 +27997,7 @@ Transform:
   m_GameObject: {fileID: 1692920132}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.68, z: 5.94}
+  m_LocalPosition: {x: 0, y: 1.11, z: 4.878}
   m_LocalScale: {x: 1.03, y: 1, z: 0.91}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26716,6 +28014,155 @@ Transform:
   - {fileID: 1626989988}
   m_Father: {fileID: 1427036269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1692920134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692920132}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.46909, y: 1, z: 0.99999964}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1693448328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1693448329}
+  - component: {fileID: 1693448330}
+  m_Layer: 0
+  m_Name: DeathSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1693448329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693448328}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 404073368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1693448330
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693448328}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 10bcfddccf2d7a34fa075e0992ca9c6b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.508
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1697288458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26727,6 +28174,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -26804,7 +28255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1698045658}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26820,7 +28271,7 @@ Transform:
   m_GameObject: {fileID: 1698045657}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.83, y: 0, z: 0}
+  m_LocalPosition: {x: 0.8299999, y: -2.79, z: 1.1670333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27055,6 +28506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -27213,6 +28668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -27289,7 +28748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1746840333}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27305,7 +28764,7 @@ Transform:
   m_GameObject: {fileID: 1746840332}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0399995, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 5.506019, y: -2.83, z: 1.2800002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27508,7 +28967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776031361}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27524,7 +28983,7 @@ Transform:
   m_GameObject: {fileID: 1776031360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.83, y: 0, z: 0}
+  m_LocalPosition: {x: 0.83000004, y: -2.5806453, z: 1.487912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27681,6 +29140,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -27991,6 +29454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -28067,7 +29534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1805903581}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28083,7 +29550,7 @@ Transform:
   m_GameObject: {fileID: 1805903580}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.85, y: 0, z: 0}
+  m_LocalPosition: {x: -0.3839809, y: -2.83, z: 1.2000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28105,6 +29572,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -28369,6 +29840,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -28693,6 +30168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -28771,6 +30250,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -28879,7 +30362,7 @@ MonoBehaviour:
   counterText: {fileID: 472920453}
   layersToInclude:
     serializedVersion: 2
-    m_Bits: 7167
+    m_Bits: 15359
   pathLayers:
     serializedVersion: 2
     m_Bits: 68
@@ -28959,7 +30442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1864324123}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28975,7 +30458,7 @@ Transform:
   m_GameObject: {fileID: 1864324122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1899996, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 4.1899996, y: -2.79, z: 1.2470335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29013,15 +30496,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864632323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0021742147}
-  m_LocalScale: {x: 3.7046165, y: 8.840326, z: 3.7046165}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00085814437}
+  m_LocalScale: {x: 2.5455885, y: 6.0745373, z: 2.5455885}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1142628587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318.18216, y: -136.36354}
+  m_AnchoredPosition: {x: 198.18204, y: -331.00116}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1864632325
@@ -29127,7 +30610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1880898373}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29143,7 +30626,7 @@ Transform:
   m_GameObject: {fileID: 1880898372}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.66, y: 0, z: 0}
+  m_LocalPosition: {x: 1.6599998, y: -2.79, z: 1.1670333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29165,6 +30648,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -29245,6 +30732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -29323,6 +30814,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -29408,7 +30903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1905195104
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29514,6 +31009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -29590,7 +31089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1922194032}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29606,7 +31105,7 @@ Transform:
   m_GameObject: {fileID: 1922194031}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.32, y: 0, z: 0.08}
+  m_LocalPosition: {x: 3.3200004, y: -2.5806453, z: 1.5679121}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29628,6 +31127,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -29708,6 +31211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -29786,6 +31293,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -29932,7 +31443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950756250}
   - component: {fileID: 1950756251}
-  m_Layer: 7
+  m_Layer: 13
   m_Name: blockedrocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29948,9 +31459,9 @@ Transform:
   m_GameObject: {fileID: 1950756249}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.78, y: 1.111, z: 0.749}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 2.532, y: 1.111, z: 0.995}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 310714549}
   - {fileID: 1068627771}
@@ -29977,8 +31488,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.83, y: 0.1, z: 0.83}
+  m_Center: {x: -0.033414364, y: 0, z: 0.019685946}
 --- !u!1001 &1958742261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29990,6 +31501,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -30070,6 +31585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -30148,6 +31667,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -30228,6 +31751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -30306,6 +31833,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -30386,6 +31917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -30464,6 +31999,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -30741,6 +32280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -30817,7 +32360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2041959219}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30833,7 +32376,7 @@ Transform:
   m_GameObject: {fileID: 2041959218}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1899996, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 4.1899996, y: -2.583871, z: 1.426154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30855,6 +32398,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -30935,6 +32482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16
@@ -31011,7 +32562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067136110}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31027,7 +32578,7 @@ Transform:
   m_GameObject: {fileID: 2067136109}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8699994, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 5.869999, y: -2.583871, z: 1.426154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31049,6 +32600,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -31129,6 +32684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -31207,6 +32766,10 @@ PrefabInstance:
     - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011496051054, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000012825835384, guid: 5cab19fdb480c4e94b567019c5375991, type: 3}
       propertyPath: m_LocalScale.x
@@ -31287,6 +32850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -31365,6 +32932,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -31521,7 +33092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2094037911}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trees (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31537,7 +33108,7 @@ Transform:
   m_GameObject: {fileID: 2094037910}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.6999993, y: 0, z: 0.08000018}
+  m_LocalPosition: {x: 6.699999, y: -2.583871, z: 1.426154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31639,6 +33210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -31718,6 +33293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22
@@ -31796,6 +33375,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
@@ -31952,6 +33535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPN_Trees.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22999999
@@ -32030,6 +33617,10 @@ PrefabInstance:
     - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_Name
       value: LPN_Trees.002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014171067106, guid: b641549cacfe64711ae003181f0d601b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010816470154, guid: b641549cacfe64711ae003181f0d601b, type: 3}
       propertyPath: m_LocalScale.x

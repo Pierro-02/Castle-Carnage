@@ -15,11 +15,14 @@ public class Enemy : MonoBehaviour {
     private Animator animator;
     private EnemySpawner spawner;
     private int health;
+    private bool escaped;
 
     private Camera _cam;
     private Canvas canvas;
 
     private void Start () {
+        escaped = false;
+
         _cam = Camera.main;
 
         canvas = healthBar.GetComponentInParent<Canvas>();
@@ -37,7 +40,11 @@ public class Enemy : MonoBehaviour {
         Move();
 
         if (IsKilled()) {
+            SoundSystem.PlayDeath();
             Economy.AddCoins(coinsOnDeath);
+            Destroy(this.gameObject);
+        } else if (escaped) {
+            TakeDamage(9999);
             Destroy(this.gameObject);
         }
 
@@ -59,6 +66,10 @@ public class Enemy : MonoBehaviour {
 
     public bool IsKilled() {
         return (health <= 0);
+    }
+
+    public void Escaped() {
+        escaped = true;
     }
 
     private void UpdateHealth(float currentHealth, float maxHealth) {

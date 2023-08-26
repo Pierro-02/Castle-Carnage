@@ -4948,9 +4948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77c699436d61f74c87fb06c372860cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowSpeed: 1
-  maxLifetime: 3
-  projectileDamage: 8
+  arrowSpeed: 1.5
+  projectileDamage: 10
 --- !u!54 &-5094749872672733824
 Rigidbody:
   m_ObjectHideFlags: 0
