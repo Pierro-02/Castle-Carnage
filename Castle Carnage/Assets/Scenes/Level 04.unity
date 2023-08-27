@@ -13956,7 +13956,6 @@ MonoBehaviour:
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
-    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     timeToNextEnemy: 1
     timeToNextWave: 5
     enemiesLeft: 0
@@ -13971,12 +13970,34 @@ MonoBehaviour:
     enemiesLeft: 0
   - enemies:
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    timeToNextEnemy: 1
+    timeToNextWave: 6
+    enemiesLeft: 0
+  - enemies:
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    timeToNextEnemy: 1
+    timeToNextWave: 6
+    enemiesLeft: 0
+  - enemies:
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
-    timeToNextEnemy: 1.5
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    timeToNextEnemy: 0.8
     timeToNextWave: 6
     enemiesLeft: 0
 --- !u!4 &582725364
@@ -20399,7 +20420,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 152d8abe46726d94680dd4f00277b8e3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.45
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24607,7 +24628,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4e471a86bdd2c994fb275243ac091c3a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.45
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -47291,7 +47312,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6ada690d7434797458cde44cbc6a56cb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.45
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0

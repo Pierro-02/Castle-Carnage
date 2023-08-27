@@ -82,7 +82,8 @@ public class GameManager : MonoBehaviour {
         int currentLevel = LevelManager.GetCurrentLevelID();
         currentLevel++;
         LevelManager.SetCurrentLevel(currentLevel);
-        if (currentLevel == LevelManager.GetLastLevelID()) {
+        if (currentLevel > LevelManager.GetLastLevelID()) {
+            SceneManager.LoadScene("Main Menu");
             Debug.Log("No More Levels");
         } else if (currentLevel < 10) {
             string nextLevel = "Level 0" + currentLevel;
