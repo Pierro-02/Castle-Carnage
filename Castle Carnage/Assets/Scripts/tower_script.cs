@@ -50,4 +50,8 @@ public class ArcherTower : MonoBehaviour {
         GameObject arrow = Instantiate(arrowPrefab, shootingPoint.position, shootingPoint.rotation);
         arrow.GetComponent<ArrowScript>().EnemyEntered(target);
     }
+
+    public void Delete() {
+        Destroy(gameObject);
+    }
 }

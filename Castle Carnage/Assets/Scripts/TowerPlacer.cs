@@ -42,13 +42,9 @@ public class TowerPlacer : MonoBehaviour {
                         UpdatePrice(crystalPrice, crystalPriceText);
                     }
                     SoundSystem.PlayTowerPlace();
-
                     hit.collider.gameObject.layer = 12;
-
                     tower.transform.SetParent(hit.collider.gameObject.transform);
-
                     tower.transform.localScale = new Vector3(0.45f, 0.3f, 0.45f);
-
                     tower.transform.localPosition = new Vector3(0, 0.55f, 0);
                 }
             }
