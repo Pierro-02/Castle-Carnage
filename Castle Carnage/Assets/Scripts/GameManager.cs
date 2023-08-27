@@ -40,12 +40,14 @@ public class GameManager : MonoBehaviour {
             isGameOver = true;
             Time.timeScale = 0f;
             gameOverPannel.SetActive(true);
+            SoundSystem.PlayGameLost();
         } else if (isGameWon && !isGameOver) {
             waitForSeconds -= Time.deltaTime;
             if (waitForSeconds <= 0) {
                 isGameWon = true;
                 Time.timeScale = 0f;
                 winPannel.SetActive(true);
+                SoundSystem.PlayGameWon();
             }
         }
         CheckWin();
@@ -63,7 +65,7 @@ public class GameManager : MonoBehaviour {
 
     public void MainMenu() {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("HomePage");
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void Restart() {
@@ -91,6 +93,7 @@ public class GameManager : MonoBehaviour {
 
     public static void UpdateWave(int id = 0) {
         if (id == 0) {
+            SoundSystem.PlayNextWave();
             currWave++;
             currentWaveText.text = currWave.ToString();
         }

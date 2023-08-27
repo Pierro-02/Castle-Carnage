@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Destination : MonoBehaviour {
@@ -16,6 +13,7 @@ public class Destination : MonoBehaviour {
     private void OnTriggerStay(Collider collider) {
         if (collider.gameObject.tag == OBJECT_LAYER) {
             collider.GetComponent<Enemy>().Escaped();
+            SoundSystem.PlayLifeLost();
         }
     }
 }
