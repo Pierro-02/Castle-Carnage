@@ -12998,6 +12998,18 @@ MonoBehaviour:
   indicator: {fileID: 1362876665}
   waves:
   - enemies:
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    timeToNextEnemy: 1
+    timeToNextWave: 5
+    enemiesLeft: 0
+  - enemies:
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
@@ -13006,10 +13018,39 @@ MonoBehaviour:
     timeToNextWave: 3
     enemiesLeft: 0
   - enemies:
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    timeToNextEnemy: 1
+    timeToNextWave: 9
+    enemiesLeft: 0
+  - enemies:
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    timeToNextEnemy: 1
+    timeToNextWave: 8
+    enemiesLeft: 0
+  - enemies:
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     timeToNextEnemy: 1
     timeToNextWave: 5
     enemiesLeft: 0
@@ -13017,30 +13058,20 @@ MonoBehaviour:
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
-    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
-    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
-    timeToNextEnemy: 1
-    timeToNextWave: 5
-    enemiesLeft: 0
-  - enemies:
-    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
     - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
-    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
+    - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
     - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
-    timeToNextEnemy: 1
-    timeToNextWave: 5
-    enemiesLeft: 0
-  - enemies:
-    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
-    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
+    - {fileID: 4448636336667549574, guid: e5802004f1d4c7c478c26724c3e284c9, type: 3}
     - {fileID: 4448636336667549574, guid: 941ba9c634e80194681bf99f80d9366f, type: 3}
-    - {fileID: 4448636336667549574, guid: 2ba7c14853261b942b63e3d06163dbd0, type: 3}
     timeToNextEnemy: 1
-    timeToNextWave: 5
+    timeToNextWave: 7
     enemiesLeft: 0
 --- !u!4 &582725364
 Transform:
