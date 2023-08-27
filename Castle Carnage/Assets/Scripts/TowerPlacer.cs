@@ -41,7 +41,7 @@ public class TowerPlacer : MonoBehaviour {
                         crystalPrice += (int)((float)crystalPrice * 0.2f);
                         UpdatePrice(crystalPrice, crystalPriceText);
                     }
-
+                    SoundSystem.PlayTowerPlace();
 
                     hit.collider.gameObject.layer = 12;
 
@@ -61,11 +61,13 @@ public class TowerPlacer : MonoBehaviour {
     }
 
     public void ArcherSelected() {
+        SoundSystem.PlayButtonClick();
         isArcherSelected = true;
         canPlace = true;
     }
 
     public void CrystalSelected() {
+        SoundSystem.PlayButtonClick();
         isArcherSelected = false;
         canPlace = true;
     }

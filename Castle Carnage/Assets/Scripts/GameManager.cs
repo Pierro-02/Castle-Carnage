@@ -54,26 +54,31 @@ public class GameManager : MonoBehaviour {
     }
 
     public void Pause() {
+        SoundSystem.PlayButtonClick();
         pausePannel.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void Resume() {
+        SoundSystem.PlayButtonClick();
         pausePannel.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void MainMenu() {
+        SoundSystem.PlayButtonClick();
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
     }
 
     public void Restart() {
+        SoundSystem.PlayButtonClick();
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void NextLevel() {
+        SoundSystem.PlayButtonClick();
         int currentLevel = LevelManager.GetCurrentLevelID();
         currentLevel++;
         LevelManager.SetCurrentLevel(currentLevel);
@@ -88,6 +93,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void GameStarted() {
+        SoundSystem.PlayButtonClick();
         isGameStarted = true;
     }
 

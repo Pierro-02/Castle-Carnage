@@ -8,6 +8,7 @@ public class playbutton_function : MonoBehaviour {
 		SceneManager.LoadSceneAsync(1);
 	}
 	public void QuitGame() {
-		Application.Quit();		
+        SoundSystem.PlayButtonClick();
+        Application.Quit();		
 	}
 }

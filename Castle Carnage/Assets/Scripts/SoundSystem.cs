@@ -9,12 +9,20 @@ public class SoundSystem : MonoBehaviour {
     [SerializeField] private AudioSource m_gameWon;
     [SerializeField] private AudioSource m_gameLost;
     [SerializeField] private AudioSource m_nextWave;
+    [SerializeField] private AudioSource m_buttonClick;
+    [SerializeField] private AudioSource m_pathPlace;
+    [SerializeField] private AudioSource m_pathSell;
+    [SerializeField] private AudioSource m_towerPlace;
 
     private static List<AudioSource> deathSound;
     private static AudioSource lifeLost;
     private static AudioSource gameWon;
     private static AudioSource gameLost;
     private static AudioSource nextWave;
+    private static AudioSource buttonClick;
+    private static AudioSource pathPlace;
+    private static AudioSource pathSell;
+    private static AudioSource towerPlace;
     private int index;
 
     private void Start() {
@@ -23,6 +31,11 @@ public class SoundSystem : MonoBehaviour {
         gameWon = m_gameWon;
         gameLost = m_gameLost;
         nextWave = m_nextWave;
+        buttonClick = m_buttonClick;
+        pathPlace = m_pathPlace;
+        pathSell = m_pathSell;
+        buttonClick = m_buttonClick;
+        towerPlace = m_towerPlace;
 
         foreach (var sound in m_deathSound)
             deathSound.Add(sound);
@@ -64,5 +77,21 @@ public class SoundSystem : MonoBehaviour {
 
     public static void PlayNextWave() {
         nextWave.Play();
+    }
+
+    public static void PlayPathPlace() {
+        pathPlace.Play();
+    }
+
+    public static void PlayPathSell() {
+        pathSell.Play();
+    }
+
+    public static void PlayTowerPlace() {
+        towerPlace.Play();
+    }
+
+    public static void PlayButtonClick() {
+        buttonClick.Play();
     }
 }

@@ -20,8 +20,9 @@ public class LevelManager : MonoBehaviour {
     } 
 
     public void OpenLevel(int levelId) {
-		currentLevel = levelId;
+        this.GetComponent<AudioSource>().Play();
 
+        currentLevel = levelId;
 
         string LevelName;
         if (levelId <= 9) {

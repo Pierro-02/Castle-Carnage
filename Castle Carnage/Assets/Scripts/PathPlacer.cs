@@ -68,10 +68,12 @@ public class CubePlacer : MonoBehaviour {
     }
 
     public void PlaceSelected() {
+        SoundSystem.PlayButtonClick();
         placing = true;
         deleting = false;
     }
     public void DeleteSelected() {
+        SoundSystem.PlayButtonClick();
         placing = false;
         deleting = true;
     }
@@ -118,6 +120,7 @@ public class CubePlacer : MonoBehaviour {
                 Destroy(hitInfo.collider.gameObject);
                 pathCounter++;
                 UpdatePathCounter(pathCounter);
+                SoundSystem.PlayPathSell();
 
             }
         }
@@ -125,6 +128,7 @@ public class CubePlacer : MonoBehaviour {
 
     private void PlaceCubeNear(Vector3 clickPoint) {
 
+        SoundSystem.PlayPathPlace();
         var finalPosition = grid.GetNearestPointOnGrid(clickPoint);
         GameObject obj = Instantiate(objectToCreate);
         obj.transform.position = finalPosition;
