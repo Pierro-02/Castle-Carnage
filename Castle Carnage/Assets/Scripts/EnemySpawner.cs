@@ -67,6 +67,8 @@ public class EnemySpawner : MonoBehaviour {
             readyToCountdown = true;
 
             currentWaveIndex++;
+            if (currentWaveIndex < waves.Length)
+                UpdatePreview(currentWaveIndex);
         }
 
         if (readyToCountdown == true) {
@@ -75,8 +77,7 @@ public class EnemySpawner : MonoBehaviour {
         }
 
         if (countdown <= 0) {
-            if (currentWaveIndex < waves.Length)
-                UpdatePreview(currentWaveIndex);
+            UpdateIndicator();
             GameManager.UpdateWave(iD);
             readyToCountdown = false;
 
