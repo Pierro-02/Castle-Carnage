@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private TMP_Text _currentWave, maxWave;
 
     private bool isGameOver;
-    private bool isGameWon;
+    private static bool isGameWon;
     private static bool isGameStarted;
     private static int currWave;
     private static TMP_Text currentWaveText;
@@ -103,6 +103,10 @@ public class GameManager : MonoBehaviour {
             currWave++;
             currentWaveText.text = currWave.ToString();
         }
+    }
+
+    public static bool IsGameWon() {
+        return isGameWon;
     }
 
     private void CheckWin() {
