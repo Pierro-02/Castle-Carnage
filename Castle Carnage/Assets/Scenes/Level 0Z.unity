@@ -8963,7 +8963,11 @@ MonoBehaviour:
   backGroundMusic:
   - {fileID: 17513162}
   - {fileID: 604512484}
-  m_deathSound: {fileID: 1693448330}
+  m_deathSound: []
+  m_lifeLost: {fileID: 0}
+  m_gameWon: {fileID: 0}
+  m_gameLost: {fileID: 0}
+  m_nextWave: {fileID: 0}
 --- !u!1001 &408927722
 PrefabInstance:
   m_ObjectHideFlags: 0
