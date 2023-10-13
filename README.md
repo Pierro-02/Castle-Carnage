@@ -13,10 +13,6 @@ The theme for the Game Jam was "Tower Defense" and the game was supposed to be a
 ### The Team
 Although the complete team is made of 3rd year BS-Cs students from FAST NUCES-ISB, some of us decided it was better to take on tasks that they have never done and leave it on pure chance that the game becomes a success. You can be the judge for who those ppl are.
 
-~~Self-Proclaimed~~ Team Lead and Game Designer: Taimoor Aamir
+Game Developer and Team Lead: Taimoor Aamir
 
-Developer: Tayyaab Ali Sajid
-
-Developer: Furqan Tariq
-
-Artist: Rayyan M. Zia
+Artist and Game Designer: Rayyan M. Zia
